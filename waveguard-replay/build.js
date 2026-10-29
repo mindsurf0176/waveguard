@@ -1,0 +1,1 @@
+const fs=require('node:fs'),path=require('node:path');const dir=__dirname;const read=n=>fs.readFileSync(path.join(dir,n),'utf8');fs.writeFileSync(path.join(dir,'index.html'),read('template.html').replace('/* CORE */',()=>read('core.js')).replace('/* APP */',()=>read('app.js')));fs.writeFileSync(path.join(dir,'synthetic-test-only.csv'),require('./core.js').synthetic());
