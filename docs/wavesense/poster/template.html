@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>WaveSense — Wi-Fi CSI 기반 실내 인체 감지 시스템 (A1 포스터)</title>
+<style>
+@page{size:594mm 841mm;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:594mm;height:841mm;background:$PAPER}
+body{font-family:Pretendard,"Apple SD Gothic Neo",sans-serif;color:$INK;word-break:keep-all;-webkit-print-color-adjust:exact;print-color-adjust:exact;-webkit-font-smoothing:antialiased}
+.poster{position:relative;width:594mm;height:841mm;overflow:hidden;background:$PAPER}
+.abs{position:absolute}
+ol,ul{list-style:none}
+
+/* ── top: one scene carries the poster ── */
+.top{left:0;top:0;width:594mm;height:482mm;background:$NAVY;color:#fff}
+.eyebrow{left:30mm;right:30mm;top:25mm;display:flex;justify-content:space-between;align-items:baseline;font-size:8.4mm;font-weight:700;letter-spacing:-.01em}
+.team{font-size:7.2mm;font-weight:500;color:#aab4d8}
+.team b{font-weight:700;color:#fff}
+h1{left:27.4mm;top:39mm;font-size:66mm;font-weight:900;line-height:.8;letter-spacing:-.045em}
+.head{left:30mm;top:122mm;font-size:17.4mm;font-weight:800;line-height:1.22;letter-spacing:-.04em}
+.sub{left:30mm;top:170mm;width:172mm;font-size:6.9mm;font-weight:500;line-height:1.55;color:#aab4d8;letter-spacing:-.01em}
+.cap b{display:block;font-weight:800;letter-spacing:-.035em;line-height:1.2}
+.cap span{display:block;font-weight:500;color:#aab4d8;letter-spacing:-.01em;margin-top:1.4mm}
+.cap.s{left:30mm;top:416mm}
+.cap.s b{font-size:10.4mm}
+.cap.s span{font-size:6.6mm}
+.cap.b{right:30mm;top:444mm;text-align:right}
+.cap.b b{font-size:13.6mm}
+.cap.b span{font-size:7.4mm}
+.kick{font-size:6.2mm;font-weight:700;color:#aab4d8;letter-spacing:.01em}
+.intro{right:30mm;top:45mm;width:160mm}
+.intro b{display:block;font-size:10mm;font-weight:800;line-height:1.28;letter-spacing:-.035em;margin-top:1.8mm}
+.intro span{display:block;font-size:6.4mm;font-weight:600;color:#cbd3ee;margin-top:3mm;letter-spacing:-.01em}
+
+/* ── bottom: bands ── */
+.sec{position:absolute;padding-top:4.2mm}
+.ttl{font-size:10.2mm;font-weight:800;line-height:1.2;letter-spacing:-.035em;color:$BLUE}
+.ttl span{font-size:6.3mm;font-weight:500;color:$INK2;margin-left:3.6mm;letter-spacing:-.02em}
+
+.waves{display:grid;grid-template-columns:repeat(3,170mm);gap:12mm;margin-top:3.6mm}
+.waves p{margin-top:1.6mm;font-size:6.4mm;font-weight:500;color:$INK2;letter-spacing:-.02em}
+.waves b{font-size:7.3mm;font-weight:800;color:$INK;margin-right:2.6mm;letter-spacing:-.03em}
+
+.chain{display:flex;align-items:center;justify-content:space-between;margin-top:5.6mm}
+.node{display:flex;align-items:center;gap:3mm}
+.node svg{flex:none;display:block}
+.node b{display:block;font-size:6.7mm;font-weight:800;letter-spacing:-.03em;line-height:1.25;white-space:nowrap}
+.node span{display:block;font-size:5.6mm;font-weight:500;color:$INK2;line-height:1.35;margin-top:.6mm;letter-spacing:-.02em;white-space:nowrap}
+.link{display:flex;flex-direction:column;align-items:center;gap:1mm;flex:none}
+.link span{font-size:4.9mm;font-weight:600;color:$INK2;line-height:1.25;text-align:center;letter-spacing:-.02em}
+.link svg{display:block}
+
+.track{display:grid;grid-template-columns:28mm 1fr;align-items:start;margin-top:9mm}
+.track+.track{margin-top:8mm}
+.track h4{font-size:6.6mm;font-weight:800;letter-spacing:-.03em;margin-top:-3.6mm}
+.track ol{display:grid;grid-template-columns:repeat(4,1fr);border-top:.7mm solid $INK}
+.track li{position:relative;padding:4.2mm 2mm 0 0}
+.track li::before{content:"";position:absolute;left:0;top:-2.15mm;width:3.6mm;height:3.6mm;border-radius:50%;background:$INK}
+.track li.end::before{background:$ORANGE}
+.track b{display:block;font-size:7mm;font-weight:800;letter-spacing:-.03em;line-height:1.25}
+.track span{display:block;font-size:5.6mm;font-weight:500;color:$INK2;line-height:1.36;margin-top:.7mm;letter-spacing:-.02em}
+
+.cols{display:grid;gap:3mm 7mm;margin-top:4mm}
+.cols li{font-size:5.7mm;font-weight:500;color:$INK2;line-height:1.42;letter-spacing:-.02em}
+.cols b{display:block;font-size:6.7mm;font-weight:800;color:$INK;letter-spacing:-.03em;margin-bottom:.6mm}
+
+.foot{position:absolute;left:30mm;top:811mm;width:534mm;padding-top:3.2mm;display:grid;grid-template-columns:200mm 1fr;gap:12mm;font-size:4.9mm;font-weight:500;color:$INK2;line-height:1.5;letter-spacing:-.01em}
+.foot b{font-size:5.2mm;font-weight:800;color:$BLUE;margin-right:3mm}
+</style>
+</head>
+<body>
+<div class="poster">
+
+  <div class="top abs">
+    <div class="eyebrow abs">
+      <span>Wi-Fi CSI 기반 실내 인체 감지 시스템</span>
+      <span class="team"><b>팀장</b> 김보성 &nbsp;·&nbsp; <b>팀원</b> 이민서, 가멀라</span>
+    </div>
+    <h1 class="abs">WaveSense</h1>
+    <div class="intro abs">
+      <p class="kick">작품 소개</p>
+      <b>Wi-Fi 신호만으로<br>방 안의 사람을 찾는 시스템</b>
+      <span>영상 불필요 · 벽 너머 감지 · 조명과 무관</span>
+    </div>
+
+    <p class="kick abs" style="left:30mm;top:111mm">선정 배경</p>
+    <p class="head abs">CCTV에도<br>사각지대는 있다.</p>
+    <p class="sub abs">가구나 벽에 가려진 곳, 사생활 때문에 카메라를 둘 수 없는 곳은 CCTV로 확인하기 어렵다. 영상 없이도 이런 곳의 사람을 찾아 CCTV의 빈틈을 채우고자 한다.</p>
+
+    <div class="abs" style="left:22mm;top:230mm">{{HERO_SMALL}}</div>
+    <div class="cap s abs"><b>CCTV가 보는 방</b><span>장애물 뒤 구역 4는 비어 보인다</span></div>
+
+    <div class="abs" style="left:206mm;top:100mm">{{HERO_BIG}}</div>
+    <div class="cap b abs"><b>WaveSense가 보는 방</b><span>같은 순간, Wi-Fi 신호로 구역 4의 사람을 찾는다</span></div>
+  </div>
+
+  <section class="sec" style="left:30mm;top:496mm;width:534mm">
+    <h3 class="ttl">감지 원리<span>이 차이를 AI로 학습해 존재 · 구역 판정</span></h3>
+    <div class="waves">
+      <div>{{W_EMPTY}}<p><b>사람이 없을 때</b>CSI가 거의 일정</p></div>
+      <div>{{W_STILL}}<p><b>사람이 있을 때</b>위치에 따라 패턴이 달라짐</p></div>
+      <div>{{W_MOVE}}<p><b>사람이 움직일 때</b>CSI가 크게 흔들림</p></div>
+    </div>
+  </section>
+
+  <section class="sec" style="left:30mm;top:584mm;width:534mm">
+    <h3 class="ttl">시스템 구성<span>저가 ESP32 보드 4대와 노트북 한 대로 구성</span></h3>
+    <div class="chain">{{CHAIN}}</div>
+  </section>
+
+  <section class="sec" style="left:30mm;top:636mm;width:330mm">
+    <h3 class="ttl">동작 시나리오<span>학습된 모델을 판정 단계에 적용</span></h3>
+    {{TRAIN}}
+    {{INFER}}
+  </section>
+
+  <section class="sec" style="left:374mm;top:636mm;width:190mm">
+    <h3 class="ttl">화면 설계<span>웹캠과 나란히 비교</span></h3>
+    <div style="margin-top:5mm">{{DASH}}</div>
+  </section>
+
+  <section class="sec" style="left:30mm;top:743mm;width:330mm">
+    <h3 class="ttl">차별성<span>CCTV와 함께 쓰는 보조 감지</span></h3>
+    <ul class="cols" style="grid-template-columns:repeat(3,1fr)">
+      <li><b>CCTV · 적외선 카메라</b>가려진 곳, 카메라를 둘 수 없는 공간도 감지</li>
+      <li><b>레이더 센서</b>전용 센서 대신 저가 ESP32 보드 활용</li>
+      <li><b>상용 Wi-Fi 감지</b>카메라와 결합해 사각지대 미감지 감소를 검증</li>
+    </ul>
+  </section>
+
+  <section class="sec" style="left:374mm;top:743mm;width:190mm">
+    <h3 class="ttl">활용 분야 및 기대 효과</h3>
+    <ul class="cols" style="grid-template-columns:1fr 1fr">
+      <li><b>보안</b>CCTV 사각지대 보완</li>
+      <li><b>돌봄</b>독거 가구 · 유아 재실 확인</li>
+      <li><b>스마트홈</b>빈 방 조명 · 냉난방 자동 제어</li>
+      <li><b>사생활 공간 안전</b>장시간 무움직임 감지 (확장 검토)</li>
+    </ul>
+  </section>
+
+  <div class="foot">
+    <p><b>개발 환경</b>ESP32-C5 · Espressif ESP-IDF · Python · 웹 프레임워크</p>
+    <p><b>참고 자료</b>Espressif ESP-CSI · Yan et al., Person-in-WiFi 3D (CVPR 2024) · Strohmayer &amp; Kampel, Through-Wall HAR with the ESP32 (ICVS 2023)</p>
+  </div>
+
+</div>
+</body>
+</html>

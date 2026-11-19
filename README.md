@@ -40,3 +40,11 @@ ZIP에는 실행 파일, 사용법, 샘플 CSV, 소스 코드와 테스트가 �
 4. **평가와 확장:** 오탐·미탐 및 환경 변화의 영향을 확인한 뒤 구역별 위치 구분으로 확장할 수 있을지 검토합니다.
 
 첫 실험의 목표는 안정적인 CSI 수집과 빈 공간·움직임 간 차이를 확인하는 것입니다. 정지한 사람이나 위치 추정은 별도로 검증해야 합니다.
+
+## WaveSense 공학설계 자료
+
+- [A1 포스터 PDF](docs/wavesense/WaveSense_포스터_A1.pdf) · [실사 버전 PDF](docs/wavesense/WaveSense_포스터_A1_실사.pdf) · [포스터 제작 소스](docs/wavesense/poster/)
+- [발표 예상 질문·답변 v4](docs/wavesense/WaveSense_예상질문답변_v4.pdf) · [발표 피드백과 적용 분야](docs/wavesense/WaveSense_피드백반영_적용분야_2026-11-19.md)
+- [구현 가능성 문헌조사](docs/wavesense/WaveSense_구현가능성_문헌조사_2026-11-19.md)
+
+문서에는 발표 준비 당시의 가설과 선행연구 결과가 담겨 있습니다. 현재 팀의 ESP32-C5 구성에서 자세 추정과 방범 경보는 실측 검증 전입니다. 문헌조사의 PowerSkel 항목은 [IEEE Internet of Things Journal 게재본](https://doi.org/10.1109/JIOT.2024.3369856)도 참고할 수 있습니다.

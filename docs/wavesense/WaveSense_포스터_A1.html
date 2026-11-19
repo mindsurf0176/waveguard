@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>WaveSense — Wi-Fi CSI 기반 실내 인체 감지 시스템 (A1 포스터)</title>
+<style>
+@page{size:594mm 841mm;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:594mm;height:841mm;background:#f5f3ee}
+body{font-family:Pretendard,"Apple SD Gothic Neo",sans-serif;color:#101a3c;word-break:keep-all;-webkit-print-color-adjust:exact;print-color-adjust:exact;-webkit-font-smoothing:antialiased}
+.poster{position:relative;width:594mm;height:841mm;overflow:hidden;background:#f5f3ee}
+.abs{position:absolute}
+ol,ul{list-style:none}
+
+/* ── top: one scene carries the poster ── */
+.top{left:0;top:0;width:594mm;height:482mm;background:#0d1637;color:#fff}
+.eyebrow{left:30mm;right:30mm;top:25mm;display:flex;justify-content:space-between;align-items:baseline;font-size:8.4mm;font-weight:700;letter-spacing:-.01em}
+.team{font-size:7.2mm;font-weight:500;color:#aab4d8}
+.team b{font-weight:700;color:#fff}
+h1{left:27.4mm;top:39mm;font-size:66mm;font-weight:900;line-height:.8;letter-spacing:-.045em}
+.head{left:30mm;top:122mm;font-size:17.4mm;font-weight:800;line-height:1.22;letter-spacing:-.04em}
+.sub{left:30mm;top:170mm;width:172mm;font-size:6.9mm;font-weight:500;line-height:1.55;color:#aab4d8;letter-spacing:-.01em}
+.cap b{display:block;font-weight:800;letter-spacing:-.035em;line-height:1.2}
+.cap span{display:block;font-weight:500;color:#aab4d8;letter-spacing:-.01em;margin-top:1.4mm}
+.cap.s{left:30mm;top:416mm}
+.cap.s b{font-size:10.4mm}
+.cap.s span{font-size:6.6mm}
+.cap.b{right:30mm;top:444mm;text-align:right}
+.cap.b b{font-size:13.6mm}
+.cap.b span{font-size:7.4mm}
+.kick{font-size:6.2mm;font-weight:700;color:#aab4d8;letter-spacing:.01em}
+.intro{right:30mm;top:45mm;width:160mm}
+.intro b{display:block;font-size:10mm;font-weight:800;line-height:1.28;letter-spacing:-.035em;margin-top:1.8mm}
+.intro span{display:block;font-size:6.4mm;font-weight:600;color:#cbd3ee;margin-top:3mm;letter-spacing:-.01em}
+
+/* ── bottom: bands ── */
+.sec{position:absolute;padding-top:4.2mm}
+.ttl{font-size:10.2mm;font-weight:800;line-height:1.2;letter-spacing:-.035em;color:#2f62ff}
+.ttl span{font-size:6.3mm;font-weight:500;color:#48536f;margin-left:3.6mm;letter-spacing:-.02em}
+
+.waves{display:grid;grid-template-columns:repeat(3,170mm);gap:12mm;margin-top:3.6mm}
+.waves p{margin-top:1.6mm;font-size:6.4mm;font-weight:500;color:#48536f;letter-spacing:-.02em}
+.waves b{font-size:7.3mm;font-weight:800;color:#101a3c;margin-right:2.6mm;letter-spacing:-.03em}
+
+.chain{display:flex;align-items:center;justify-content:space-between;margin-top:5.6mm}
+.node{display:flex;align-items:center;gap:3mm}
+.node svg{flex:none;display:block}
+.node b{display:block;font-size:6.7mm;font-weight:800;letter-spacing:-.03em;line-height:1.25;white-space:nowrap}
+.node span{display:block;font-size:5.6mm;font-weight:500;color:#48536f;line-height:1.35;margin-top:.6mm;letter-spacing:-.02em;white-space:nowrap}
+.link{display:flex;flex-direction:column;align-items:center;gap:1mm;flex:none}
+.link span{font-size:4.9mm;font-weight:600;color:#48536f;line-height:1.25;text-align:center;letter-spacing:-.02em}
+.link svg{display:block}
+
+.track{display:grid;grid-template-columns:28mm 1fr;align-items:start;margin-top:9mm}
+.track+.track{margin-top:8mm}
+.track h4{font-size:6.6mm;font-weight:800;letter-spacing:-.03em;margin-top:-3.6mm}
+.track ol{display:grid;grid-template-columns:repeat(4,1fr);border-top:.7mm solid #101a3c}
+.track li{position:relative;padding:4.2mm 2mm 0 0}
+.track li::before{content:"";position:absolute;left:0;top:-2.15mm;width:3.6mm;height:3.6mm;border-radius:50%;background:#101a3c}
+.track li.end::before{background:#ff5a1f}
+.track b{display:block;font-size:7mm;font-weight:800;letter-spacing:-.03em;line-height:1.25}
+.track span{display:block;font-size:5.6mm;font-weight:500;color:#48536f;line-height:1.36;margin-top:.7mm;letter-spacing:-.02em}
+
+.cols{display:grid;gap:3mm 7mm;margin-top:4mm}
+.cols li{font-size:5.7mm;font-weight:500;color:#48536f;line-height:1.42;letter-spacing:-.02em}
+.cols b{display:block;font-size:6.7mm;font-weight:800;color:#101a3c;letter-spacing:-.03em;margin-bottom:.6mm}
+
+.foot{position:absolute;left:30mm;top:811mm;width:534mm;padding-top:3.2mm;display:grid;grid-template-columns:200mm 1fr;gap:12mm;font-size:4.9mm;font-weight:500;color:#48536f;line-height:1.5;letter-spacing:-.01em}
+.foot b{font-size:5.2mm;font-weight:800;color:#2f62ff;margin-right:3mm}
+</style>
+</head>
+<body>
+<div class="poster">
+
+  <div class="top abs">
+    <div class="eyebrow abs">
+      <span>Wi-Fi CSI 기반 실내 인체 감지 시스템</span>
+      <span class="team"><b>팀장</b> 김보성 &nbsp;·&nbsp; <b>팀원</b> 이민서, 가멀라</span>
+    </div>
+    <h1 class="abs">WaveSense</h1>
+    <div class="intro abs">
+      <p class="kick">작품 소개</p>
+      <b>Wi-Fi 신호만으로<br>방 안의 사람을 찾는 시스템</b>
+      <span>영상 불필요 · 벽 너머 감지 · 조명과 무관</span>
+    </div>
+
+    <p class="kick abs" style="left:30mm;top:111mm">선정 배경</p>
+    <p class="head abs">CCTV에도<br>사각지대는 있다.</p>
+    <p class="sub abs">가구나 벽에 가려진 곳, 사생활 때문에 카메라를 둘 수 없는 곳은 CCTV로 확인하기 어렵다. 영상 없이도 이런 곳의 사람을 찾아 CCTV의 빈틈을 채우고자 한다.</p>
+
+    <div class="abs" style="left:22mm;top:230mm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-88.3 -47.8 192.1 204.4" width="172.0mm" height="183.1mm" font-family="Pretendard, 'Apple SD Gothic Neo', sans-serif">
+<defs><clipPath id="shadow-cctv"><polygon points="10.69,71.29 47.33,94.74 57.91,104.27 21.37,142.58 -15.85,118.75 -17.94,101.30"/></clipPath><clipPath id="floor-cctv"><polygon points="0.00,0.00 97.71,62.54 21.37,142.58 -76.34,80.04"/></clipPath></defs>
+<polygon points="-0.53,6.39 102.06,72.06 21.91,156.10 -80.69,90.44" fill="#060b22"/>
+<polygon points="-76.34,80.04 21.37,142.58 21.37,145.60 -76.34,83.06" fill="#6f7aa0"/>
+<polygon points="97.71,62.54 21.37,142.58 21.37,145.60 97.71,65.56" fill="#8a94b4"/>
+<polygon points="0.00,0.00 -76.34,80.04 -76.34,40.21 0.00,-39.83" fill="#99a3be"/>
+<polygon points="0.00,0.00 97.71,62.54 97.71,22.71 0.00,-39.83" fill="#afb7cd"/>
+<line x1="-76.34" y1="40.21" x2="0.00" y2="-39.83" stroke="#e3e8f5" stroke-width="1" stroke-linecap="round"/>
+<line x1="0.00" y1="-39.83" x2="97.71" y2="22.71" stroke="#e3e8f5" stroke-width="1" stroke-linecap="round"/>
+<polygon points="0.00,0.00 97.71,62.54 21.37,142.58 -76.34,80.04" fill="#f1f3f9"/>
+<polygon points="10.69,71.29 47.33,94.74 57.91,104.27 21.37,142.58 -15.85,118.75 -17.94,101.30" fill="#1c2654"/>
+<g clip-path="url(#shadow-cctv)"><line x1="14.50" y1="67.29" x2="-31.30" y2="115.31" stroke="#3a4682" stroke-width=".6"/><line x1="18.90" y1="70.10" x2="-26.91" y2="118.13" stroke="#3a4682" stroke-width=".6"/><line x1="23.30" y1="72.92" x2="-22.51" y2="120.94" stroke="#3a4682" stroke-width=".6"/><line x1="27.69" y1="75.73" x2="-18.11" y2="123.75" stroke="#3a4682" stroke-width=".6"/><line x1="32.09" y1="78.54" x2="-13.71" y2="126.57" stroke="#3a4682" stroke-width=".6"/><line x1="36.49" y1="81.36" x2="-9.32" y2="129.38" stroke="#3a4682" stroke-width=".6"/><line x1="40.89" y1="84.17" x2="-4.92" y2="132.20" stroke="#3a4682" stroke-width=".6"/><line x1="45.28" y1="86.99" x2="-0.52" y2="135.01" stroke="#3a4682" stroke-width=".6"/><line x1="49.68" y1="89.80" x2="3.87" y2="137.82" stroke="#3a4682" stroke-width=".6"/><line x1="54.08" y1="92.61" x2="8.27" y2="140.64" stroke="#3a4682" stroke-width=".6"/><line x1="58.47" y1="95.43" x2="12.67" y2="143.45" stroke="#3a4682" stroke-width=".6"/><line x1="62.87" y1="98.24" x2="17.07" y2="146.27" stroke="#3a4682" stroke-width=".6"/><line x1="67.27" y1="101.06" x2="21.46" y2="149.08" stroke="#3a4682" stroke-width=".6"/></g>
+<line x1="48.86" y1="31.27" x2="-27.49" y2="111.31" stroke="#9aa4c4" stroke-width=".6" stroke-dasharray="2.2 2.2"/>
+<line x1="-38.17" y1="40.02" x2="59.54" y2="102.56" stroke="#9aa4c4" stroke-width=".6" stroke-dasharray="2.2 2.2"/>
+<text transform="matrix(0.7880 0.5043 -0.6157 0.6455 23.08 30.24)" font-size="15" font-weight="800" fill="#98a2c0" opacity="1.0" text-anchor="middle" dominant-baseline="central">1</text>
+<text transform="matrix(0.7880 0.5043 -0.6157 0.6455 64.43 64.44)" font-size="15" font-weight="800" fill="#98a2c0" opacity="1.0" text-anchor="middle" dominant-baseline="central">2</text>
+<text transform="matrix(0.7880 0.5043 -0.6157 0.6455 -43.49 75.29)" font-size="15" font-weight="800" fill="#98a2c0" opacity="1.0" text-anchor="middle" dominant-baseline="central">3</text>
+<text transform="matrix(0.7880 0.5043 -0.6157 0.6455 -10.84 110.36)" font-size="15" font-weight="800" fill="#7f8cc4" opacity="1.0" text-anchor="middle" dominant-baseline="central">4</text>
+<polygon points="-13.52,2.61 97.71,62.54 57.91,104.27 47.33,94.74 10.69,71.29 -17.94,101.30 -15.85,118.75 -76.34,80.04" fill="#fff" opacity=".2"/>
+<line x1="-13.52" y1="2.61" x2="57.91" y2="104.27" stroke="#fff" stroke-width=".7" stroke-dasharray="2 1.8"/>
+<line x1="-13.52" y1="2.61" x2="-15.85" y2="118.75" stroke="#fff" stroke-width=".7" stroke-dasharray="2 1.8"/>
+<g opacity="1"><line x1="-26.72" y1="-3.99" x2="-22.72" y2="-2.49" stroke="#0d1637" stroke-width="1.6" stroke-linecap="round"/><g transform="translate(-23.72 -2.79) rotate(27)"><rect x="0" y="-3.6" width="12.5" height="7.2" rx="2.2" fill="#0d1637" stroke="#fff" stroke-width=".6"/><rect x="10.4" y="-2.6" width="3" height="5.2" rx="1" fill="#2a376e" stroke="#fff" stroke-width=".5"/><circle cx="3" cy="0" r="1" fill="#ff4d3d"/></g></g>
+<polygon points="10.69,71.29 -17.94,101.30 -17.94,63.96 10.69,33.95" fill="#414b78"/>
+<polygon points="10.69,71.29 47.33,94.74 47.33,57.40 10.69,33.95" fill="#566190"/>
+<polygon points="47.33,94.74 49.24,92.74 49.24,55.40 47.33,57.40" fill="#6b76a6"/>
+<polygon points="-17.94,101.30 -20.39,99.74 -20.39,62.40 -17.94,63.96" fill="#333c66"/>
+<polygon points="10.69,33.95 47.33,57.40 49.24,55.40 10.15,30.38 -20.39,62.40 -17.94,63.96" fill="#8a95c2"/>
+<text transform="matrix(0.8423 0.5390 0 1 29.25 64.50)" font-size="5.6" font-weight="700" fill="#fff" opacity=".8" text-anchor="middle" dominant-baseline="central">장애물</text>
+<g opacity="1.0"><rect x="8.76" y="82.76" width="5.67" height="21.32" rx="2.84" fill="#2a356a" stroke="#9aa6d2" stroke-width="0.7" stroke-dasharray="2 1.6"/><rect x="16.77" y="82.76" width="5.67" height="21.32" rx="2.84" fill="#2a356a" stroke="#9aa6d2" stroke-width="0.7" stroke-dasharray="2 1.6"/><rect x="8.56" y="75.33" width="14.08" height="13.10" rx="5.07" fill="#2a356a" stroke="#9aa6d2" stroke-width="0.7" stroke-dasharray="2 1.6"/><circle cx="15.60" cy="69.46" r="4.50" fill="#2a356a" stroke="#9aa6d2" stroke-width="0.7" stroke-dasharray="2 1.6"/></g>
+<text x="-30.7" y="-13.0" font-size="6" font-weight="800" fill="#fff" text-anchor="end" letter-spacing=".04em">CCTV</text>
+</svg></div>
+    <div class="cap s abs"><b>CCTV가 보는 방</b><span>장애물 뒤 구역 4는 비어 보인다</span></div>
+
+    <div class="abs" style="left:206mm;top:100mm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-88.3 -61.8 214.1 224.4" width="352.0mm" height="368.9mm" font-family="Pretendard, 'Apple SD Gothic Neo', sans-serif">
+<defs><clipPath id="shadow-wave"><polygon points="10.69,71.29 47.33,94.74 57.91,104.27 21.37,142.58 -15.85,118.75 -17.94,101.30"/></clipPath><clipPath id="floor-wave"><polygon points="0.00,0.00 97.71,62.54 21.37,142.58 -76.34,80.04"/></clipPath></defs>
+<polygon points="-0.53,6.39 102.06,72.06 21.91,156.10 -80.69,90.44" fill="#060b22"/>
+<polygon points="-76.34,80.04 21.37,142.58 21.37,145.60 -76.34,83.06" fill="#7d88ab"/>
+<polygon points="97.71,62.54 21.37,142.58 21.37,145.60 97.71,65.56" fill="#99a3c2"/>
+<polygon points="0.00,0.00 -76.34,80.04 -76.34,40.21 0.00,-39.83" fill="#aeb8d2"/>
+<polygon points="0.00,0.00 97.71,62.54 97.71,22.71 0.00,-39.83" fill="#c4cce2"/>
+<line x1="-76.34" y1="40.21" x2="0.00" y2="-39.83" stroke="#e3e8f5" stroke-width="1" stroke-linecap="round"/>
+<line x1="0.00" y1="-39.83" x2="97.71" y2="22.71" stroke="#e3e8f5" stroke-width="1" stroke-linecap="round"/>
+<polygon points="0.00,0.00 97.71,62.54 21.37,142.58 -76.34,80.04" fill="#e9edf7"/>
+<polyline points="20.52,13.13 20.24,13.42 19.95,13.71 19.65,13.99 19.35,14.27 19.04,14.55 18.73,14.82 18.41,15.08 18.09,15.34 17.76,15.60 17.42,15.85 17.08,16.10 16.74,16.34 16.39,16.58 16.03,16.81 15.67,17.04 15.31,17.26 14.94,17.47 14.56,17.68 14.18,17.89 13.80,18.09 13.41,18.28 13.02,18.47 12.62,18.66 12.23,18.83 11.82,19.01 11.42,19.17 11.00,19.33 10.59,19.49 10.17,19.64 9.75,19.78 9.33,19.91 8.91,20.04 8.48,20.17 8.05,20.29 7.61,20.40 7.18,20.50 6.74,20.60 6.30,20.70 5.86,20.78 5.41,20.86 4.97,20.94 4.52,21.01 4.07,21.07 3.62,21.12 3.17,21.17 2.72,21.21 2.27,21.25 1.82,21.28 1.36,21.30 0.91,21.32 0.45,21.33 -0.00,21.33 -0.45,21.33 -0.91,21.32 -1.36,21.30 -1.82,21.28 -2.27,21.25 -2.72,21.21 -3.17,21.17 -3.62,21.12 -4.07,21.07 -4.52,21.01 -4.97,20.94 -5.41,20.86 -5.86,20.78 -6.30,20.70 -6.74,20.60 -7.18,20.50 -7.61,20.40 -8.05,20.29 -8.48,20.17 -8.91,20.04 -9.33,19.91 -9.75,19.78 -10.17,19.64 -10.59,19.49 -11.00,19.33 -11.42,19.17 -11.82,19.01 -12.23,18.83 -12.62,18.66 -13.02,18.47 -13.41,18.28 -13.80,18.09 -14.18,17.89 -14.56,17.68 -14.94,17.47 -15.31,17.26 -15.67,17.04 -16.03,16.81" fill="none" stroke="#2f62ff" stroke-width="1.50" stroke-linecap="round" opacity="0.60"/>
+<polyline points="41.04,26.27 40.47,26.85 39.90,27.42 39.31,27.99 38.70,28.55 38.09,29.10 37.46,29.64 36.83,30.17 36.18,30.69 35.52,31.20 34.85,31.70 34.17,32.20 33.48,32.68 32.78,33.15 32.06,33.62 31.34,34.07 30.61,34.51 29.87,34.95 29.12,35.37 28.36,35.78 27.60,36.18 26.82,36.57 26.04,36.95 25.25,37.31 24.45,37.67 23.64,38.01 22.83,38.34 22.01,38.66 21.18,38.97 20.35,39.27 19.51,39.55 18.66,39.83 17.81,40.09 16.96,40.34 16.09,40.57 15.23,40.80 14.36,41.01 13.48,41.21 12.60,41.39 11.72,41.57 10.83,41.73 9.94,41.88 9.04,42.01 8.15,42.14 7.25,42.25 6.35,42.34 5.44,42.43 4.54,42.50 3.63,42.56 2.73,42.60 1.82,42.64 0.91,42.65 -0.00,42.66 -0.91,42.65 -1.82,42.64 -2.73,42.60 -3.63,42.56 -4.54,42.50 -5.44,42.43 -6.35,42.34 -7.25,42.25 -8.15,42.14 -9.04,42.01 -9.94,41.88 -10.83,41.73 -11.72,41.57 -12.60,41.39 -13.48,41.21 -14.36,41.01 -15.23,40.80 -16.09,40.57 -16.96,40.34 -17.81,40.09 -18.66,39.83 -19.51,39.55 -20.35,39.27 -21.18,38.97 -22.01,38.66 -22.83,38.34 -23.64,38.01 -24.45,37.67 -25.25,37.31 -26.04,36.95 -26.82,36.57 -27.60,36.18 -28.36,35.78 -29.12,35.37 -29.87,34.95 -30.61,34.51 -31.34,34.07 -32.06,33.62" fill="none" stroke="#2f62ff" stroke-width="1.38" stroke-linecap="round" opacity="0.53"/>
+<polyline points="61.56,39.40 60.71,40.27 59.84,41.13 58.96,41.98 58.05,42.82 57.13,43.64 56.19,44.45 55.24,45.25 54.27,46.03 53.28,46.80 52.27,47.56 51.25,48.30 50.21,49.02 49.16,49.73 48.10,50.43 47.01,51.11 45.92,51.77 44.81,52.42 43.68,53.05 42.55,53.67 41.40,54.27 40.23,54.85 39.06,55.42 37.87,55.97 36.68,56.50 35.47,57.02 34.25,57.52 33.01,58.00 31.77,58.46 30.52,58.91 29.26,59.33 28.00,59.74 26.72,60.13 25.43,60.51 24.14,60.86 22.84,61.20 21.53,61.51 20.22,61.81 18.90,62.09 17.57,62.35 16.24,62.59 14.91,62.82 13.57,63.02 12.22,63.20 10.87,63.37 9.52,63.52 8.17,63.64 6.81,63.75 5.45,63.84 4.09,63.90 2.73,63.95 1.36,63.98 -0.00,63.99 -1.36,63.98 -2.73,63.95 -4.09,63.90 -5.45,63.84 -6.81,63.75 -8.17,63.64 -9.52,63.52 -10.87,63.37 -12.22,63.20 -13.57,63.02 -14.91,62.82 -16.24,62.59 -17.57,62.35 -18.90,62.09 -20.22,61.81 -21.53,61.51 -22.84,61.20 -24.14,60.86 -25.43,60.51 -26.72,60.13 -28.00,59.74 -29.26,59.33 -30.52,58.91 -31.77,58.46 -33.01,58.00 -34.25,57.52 -35.47,57.02 -36.68,56.50 -37.87,55.97 -39.06,55.42 -40.23,54.85 -41.40,54.27 -42.55,53.67 -43.68,53.05 -44.81,52.42 -45.92,51.77 -47.01,51.11 -48.10,50.43" fill="none" stroke="#2f62ff" stroke-width="1.26" stroke-linecap="round" opacity="0.46"/>
+<polyline points="82.08,52.53 80.95,53.70 79.79,54.84 78.61,55.98 77.41,57.09 76.18,58.19 74.93,59.27 73.65,60.33 72.36,61.38 71.04,62.40 69.70,63.41 68.34,64.39 66.95,65.36 65.55,66.31 64.13,67.24 62.69,68.14 61.22,69.03 59.74,69.89 58.25,70.74 56.73,71.56 55.20,72.36 53.65,73.14 52.08,73.89 50.50,74.63 48.90,75.34 47.29,76.02 45.66,76.69 44.02,77.33 42.37,77.95 40.70,78.54 39.02,79.11 37.33,79.66 35.62,80.18 33.91,80.67 32.19,81.15 30.45,81.59 28.71,82.02 26.96,82.42 25.20,82.79 23.43,83.14 21.66,83.46 19.87,83.76 18.09,84.03 16.29,84.27 14.50,84.49 12.69,84.69 10.89,84.86 9.08,85.00 7.27,85.12 5.45,85.21 3.64,85.27 1.82,85.31 -0.00,85.32 -1.82,85.31 -3.64,85.27 -5.45,85.21 -7.27,85.12 -9.08,85.00 -10.89,84.86 -12.69,84.69 -14.50,84.49 -16.29,84.27 -18.09,84.03 -19.87,83.76 -21.66,83.46 -23.43,83.14 -25.20,82.79 -26.96,82.42 -28.71,82.02 -30.45,81.59 -32.19,81.15 -33.91,80.67 -35.62,80.18 -37.33,79.66 -39.02,79.11 -40.70,78.54 -42.37,77.95 -44.02,77.33 -45.66,76.69 -47.29,76.02 -48.90,75.34 -50.50,74.63 -52.08,73.89 -53.65,73.14 -55.20,72.36 -56.73,71.56 -58.25,70.74 -59.74,69.89 -61.22,69.03 -62.69,68.14 -64.13,67.24" fill="none" stroke="#2f62ff" stroke-width="1.14" stroke-linecap="round" opacity="0.39"/>
+<polyline points="72.81,88.42 70.91,89.45 69.00,90.45 67.06,91.42 65.10,92.36 63.12,93.28 61.13,94.17 59.11,95.03 57.08,95.86 55.02,96.66 52.96,97.43 50.87,98.18 48.77,98.89 46.66,99.57 44.53,100.22 42.39,100.84 40.23,101.43 38.07,101.99 35.89,102.52 33.70,103.02 31.50,103.49 29.29,103.92 27.07,104.32 24.84,104.69 22.61,105.03 20.37,105.34 18.12,105.62 15.87,105.86 13.61,106.07 11.35,106.25 9.08,106.39 6.81,106.51 4.54,106.59 2.27,106.64 0.00,106.65 -2.27,106.64 -4.54,106.59 -6.81,106.51 -9.08,106.39 -11.35,106.25 -13.61,106.07 -15.87,105.86 -18.12,105.62 -20.37,105.34 -22.61,105.03 -24.84,104.69 -27.07,104.32 -29.29,103.92 -31.50,103.49 -33.70,103.02 -35.89,102.52 -38.07,101.99 -40.23,101.43 -42.39,100.84 -44.53,100.22" fill="none" stroke="#2f62ff" stroke-width="1.02" stroke-linecap="round" opacity="0.32"/>
+<polyline points="37.80,124.18 35.15,124.70 32.48,125.19 29.81,125.63 27.13,126.04 24.44,126.41 21.74,126.74 19.04,127.03 16.33,127.28 13.62,127.50 10.90,127.67 8.18,127.81 5.45,127.91 2.73,127.96 -0.00,127.98" fill="none" stroke="#2f62ff" stroke-width="0.90" stroke-linecap="round" opacity="0.25"/>
+<polygon points="10.69,71.29 59.54,102.56 21.37,142.58 -27.49,111.31" fill="#ffd9c9"/>
+<polygon points="10.69,71.29 59.54,102.56 21.37,142.58 -27.49,111.31" fill="none" stroke="#ff5a1f" stroke-width="1.3" stroke-linejoin="round"/>
+<line x1="48.86" y1="31.27" x2="-27.49" y2="111.31" stroke="#9aa4c4" stroke-width=".6" stroke-dasharray="2.2 2.2"/>
+<line x1="-38.17" y1="40.02" x2="59.54" y2="102.56" stroke="#9aa4c4" stroke-width=".6" stroke-dasharray="2.2 2.2"/>
+<text transform="matrix(0.7880 0.5043 -0.6157 0.6455 23.08 30.24)" font-size="15" font-weight="800" fill="#98a2c0" opacity="1.0" text-anchor="middle" dominant-baseline="central">1</text>
+<text transform="matrix(0.7880 0.5043 -0.6157 0.6455 64.43 64.44)" font-size="15" font-weight="800" fill="#98a2c0" opacity="1.0" text-anchor="middle" dominant-baseline="central">2</text>
+<text transform="matrix(0.7880 0.5043 -0.6157 0.6455 -43.49 75.29)" font-size="15" font-weight="800" fill="#98a2c0" opacity="1.0" text-anchor="middle" dominant-baseline="central">3</text>
+<text transform="matrix(0.7880 0.5043 -0.6157 0.6455 -10.84 110.36)" font-size="15" font-weight="800" fill="#ff5a1f" opacity="1.0" text-anchor="middle" dominant-baseline="central">4</text>
+<g opacity=".45"><line x1="-26.72" y1="-3.99" x2="-22.72" y2="-2.49" stroke="#0d1637" stroke-width="1.6" stroke-linecap="round"/><g transform="translate(-23.72 -2.79) rotate(27)"><rect x="0" y="-3.6" width="12.5" height="7.2" rx="2.2" fill="#0d1637" stroke="#fff" stroke-width=".6"/><rect x="10.4" y="-2.6" width="3" height="5.2" rx="1" fill="#2a376e" stroke="#fff" stroke-width=".5"/><circle cx="3" cy="0" r="1" fill="#7f8bb5"/></g></g>
+<line x1="0.00" y1="-23.83" x2="97.71" y2="38.71" stroke="#2f62ff" stroke-width="1.1" stroke-dasharray="3 2"/>
+<line x1="0.00" y1="-23.83" x2="-76.34" y2="56.22" stroke="#2f62ff" stroke-width="1.1" stroke-dasharray="3 2"/>
+<line x1="0.00" y1="-23.83" x2="21.37" y2="118.75" stroke="#2f62ff" stroke-width="1.1" stroke-dasharray="3 2"/>
+<ellipse cx="0.00" cy="0.00" rx="3.4" ry="1.7" fill="#0d1637" opacity=".35"/><line x1="0.00" y1="0.00" x2="0.00" y2="-23.83" stroke="#0d1637" stroke-width="1.3" stroke-linecap="round"/><rect x="-6.75" y="-28.13" width="13.5" height="8.6" rx="2" fill="#0d1637" stroke="#fff" stroke-width=".7"/><text x="0.00" y="-23.63" font-size="5" font-weight="800" fill="#fff" text-anchor="middle" dominant-baseline="central" letter-spacing=".02em">TX</text>
+<ellipse cx="97.71" cy="62.54" rx="3.4" ry="1.7" fill="#0d1637" opacity=".35"/><line x1="97.71" y1="62.54" x2="97.71" y2="38.71" stroke="#0d1637" stroke-width="1.3" stroke-linecap="round"/><rect x="90.96" y="34.41" width="13.5" height="8.6" rx="2" fill="#2f62ff" stroke="#fff" stroke-width=".7"/><text x="97.71" y="38.91" font-size="5" font-weight="800" fill="#fff" text-anchor="middle" dominant-baseline="central" letter-spacing=".02em">RX</text>
+<ellipse cx="-76.34" cy="80.04" rx="3.4" ry="1.7" fill="#0d1637" opacity=".35"/><line x1="-76.34" y1="80.04" x2="-76.34" y2="56.22" stroke="#0d1637" stroke-width="1.3" stroke-linecap="round"/><rect x="-83.09" y="51.92" width="13.5" height="8.6" rx="2" fill="#2f62ff" stroke="#fff" stroke-width=".7"/><text x="-76.34" y="56.42" font-size="5" font-weight="800" fill="#fff" text-anchor="middle" dominant-baseline="central" letter-spacing=".02em">RX</text>
+<polygon points="10.69,71.29 -17.94,101.30 -17.94,63.96 10.69,33.95" fill="#414b78"/>
+<polygon points="10.69,71.29 47.33,94.74 47.33,57.40 10.69,33.95" fill="#566190"/>
+<polygon points="47.33,94.74 49.24,92.74 49.24,55.40 47.33,57.40" fill="#6b76a6"/>
+<polygon points="-17.94,101.30 -20.39,99.74 -20.39,62.40 -17.94,63.96" fill="#333c66"/>
+<polygon points="10.69,33.95 47.33,57.40 49.24,55.40 10.15,30.38 -20.39,62.40 -17.94,63.96" fill="#8a95c2"/>
+<text transform="matrix(0.8423 0.5390 0 1 29.25 64.50)" font-size="5.6" font-weight="700" fill="#fff" opacity=".8" text-anchor="middle" dominant-baseline="central">장애물</text>
+<line x1="10.90" y1="48.89" x2="21.37" y2="118.75" stroke="#2f62ff" stroke-width="1.1" stroke-dasharray="3 2"/>
+<g clip-path="url(#floor-wave)"><polygon points="25.37,110.34 24.67,111.01 23.90,111.63 23.06,112.19 22.17,112.70 21.23,113.13 20.25,113.50 19.23,113.80 18.18,114.02 17.11,114.16 16.03,114.23 14.95,114.23 13.88,114.14 12.81,113.98 11.77,113.74 10.76,113.43 9.78,113.05 8.85,112.60 7.97,112.09 7.14,111.51 6.39,110.88 5.70,110.19 5.09,109.46 4.55,108.69 4.10,107.89 3.74,107.05 3.47,106.19 3.29,105.32 3.21,104.44 3.22,103.55 3.32,102.67 3.52,101.80 3.81,100.94 4.19,100.11 4.65,99.31 5.20,98.55 5.83,97.83 6.53,97.15 7.30,96.53 8.14,95.97 9.03,95.47 9.97,95.03 10.96,94.66 11.98,94.37 13.02,94.15 14.09,94.00 15.17,93.93 16.25,93.94 17.33,94.02 18.39,94.18 19.43,94.42 20.45,94.73 21.42,95.11 22.35,95.56 23.24,96.08 24.06,96.65 24.82,97.29 25.50,97.97 26.12,98.70 26.65,99.47 27.10,100.28 27.46,101.11 27.73,101.97 27.91,102.84 27.99,103.73 27.98,104.61 27.88,105.50 27.68,106.37 27.39,107.22 27.02,108.05 26.55,108.85 26.00,109.61" fill="none" stroke="#ff5a1f" stroke-width="1.30" opacity="1.00"/></g>
+<g clip-path="url(#floor-wave)"><polygon points="32.21,114.71 31.02,115.86 29.71,116.91 28.29,117.87 26.77,118.73 25.17,119.47 23.50,120.09 21.76,120.60 19.98,120.97 18.17,121.22 16.34,121.34 14.50,121.33 12.67,121.18 10.86,120.91 9.09,120.50 7.36,119.98 5.70,119.33 4.12,118.56 2.62,117.69 1.22,116.71 -0.06,115.64 -1.23,114.47 -2.28,113.23 -3.18,111.92 -3.94,110.55 -4.56,109.13 -5.02,107.67 -5.32,106.19 -5.47,104.68 -5.45,103.18 -5.27,101.68 -4.94,100.20 -4.45,98.75 -3.80,97.33 -3.01,95.98 -2.08,94.68 -1.01,93.45 0.18,92.31 1.50,91.25 2.91,90.29 4.43,89.44 6.03,88.70 7.70,88.07 9.44,87.57 11.22,87.19 13.03,86.94 14.87,86.82 16.70,86.84 18.53,86.98 20.34,87.26 22.12,87.66 23.84,88.19 25.50,88.84 27.08,89.60 28.58,90.47 29.98,91.45 31.27,92.53 32.44,93.69 33.48,94.93 34.38,96.24 35.15,97.61 35.76,99.03 36.22,100.49 36.52,101.98 36.67,103.48 36.65,104.99 36.48,106.48 36.14,107.97 35.65,109.42 35.01,110.83 34.21,112.19 33.28,113.49" fill="none" stroke="#ff5a1f" stroke-width="1.05" opacity="0.72"/></g>
+<g clip-path="url(#floor-wave)"><polygon points="39.05,119.09 37.37,120.71 35.51,122.20 33.51,123.55 31.37,124.76 29.11,125.80 26.75,126.68 24.30,127.39 21.79,127.93 19.23,128.28 16.64,128.44 14.04,128.43 11.46,128.22 8.91,127.83 6.40,127.27 3.97,126.52 1.63,125.61 -0.61,124.53 -2.72,123.29 -4.70,121.91 -6.51,120.39 -8.17,118.75 -9.64,117.00 -10.92,115.15 -11.99,113.21 -12.86,111.21 -13.51,109.15 -13.94,107.05 -14.14,104.93 -14.12,102.81 -13.87,100.69 -13.40,98.60 -12.70,96.55 -11.79,94.56 -10.68,92.64 -9.36,90.80 -7.85,89.07 -6.16,87.46 -4.31,85.97 -2.31,84.61 -0.17,83.41 2.09,82.36 4.45,81.48 6.90,80.77 9.41,80.24 11.97,79.89 14.56,79.72 17.16,79.74 19.74,79.94 22.30,80.33 24.80,80.90 27.23,81.64 29.57,82.56 31.81,83.64 33.92,84.87 35.90,86.25 37.72,87.77 39.37,89.41 40.84,91.16 42.12,93.01 43.19,94.95 44.06,96.95 44.71,99.01 45.14,101.11 45.34,103.23 45.32,105.36 45.07,107.47 44.60,109.57 43.90,111.62 43.00,113.61 41.88,115.53 40.56,117.36" fill="none" stroke="#ff5a1f" stroke-width="0.80" opacity="0.44"/></g>
+<g opacity="1.0"><rect x="8.76" y="82.76" width="5.67" height="21.32" rx="2.84" fill="#ff5a1f" stroke="#fff" stroke-width="0.8"/><rect x="16.77" y="82.76" width="5.67" height="21.32" rx="2.84" fill="#ff5a1f" stroke="#fff" stroke-width="0.8"/><rect x="8.56" y="75.33" width="14.08" height="13.10" rx="5.07" fill="#ff5a1f" stroke="#fff" stroke-width="0.8"/><circle cx="15.60" cy="69.46" r="4.50" fill="#ff5a1f" stroke="#fff" stroke-width="0.8"/></g>
+<ellipse cx="21.37" cy="142.58" rx="3.4" ry="1.7" fill="#0d1637" opacity=".35"/><line x1="21.37" y1="142.58" x2="21.37" y2="118.75" stroke="#0d1637" stroke-width="1.3" stroke-linecap="round"/><rect x="14.62" y="114.45" width="13.5" height="8.6" rx="2" fill="#2f62ff" stroke="#fff" stroke-width=".7"/><text x="21.37" y="118.95" font-size="5" font-weight="800" fill="#fff" text-anchor="middle" dominant-baseline="central" letter-spacing=".02em">RX</text>
+<path d="M23.1 87.7 H81.8" stroke="#ff5a1f" stroke-width=".7" fill="none"/>
+<circle cx="23.1" cy="87.7" r="1.1" fill="#ff5a1f"/>
+<text x="84.3" y="88.1" font-size="8.4" font-weight="800" fill="#ff5a1f" dominant-baseline="central" letter-spacing="-.02em">사람 감지</text>
+<text x="84.3" y="96.3" font-size="3.5" font-weight="500" fill="#aab4d8">구역 4 = 장애물로 가린</text>
+<text x="84.3" y="100.9" font-size="3.5" font-weight="500" fill="#aab4d8">웹캠 사각지대</text>
+<path d="M0.0 -28.4 V-58.8" stroke="#8f9bc8" stroke-width=".45" fill="none"/>
+<text x="3.5" y="-54.8" font-size="4.5" font-weight="800" fill="#fff" text-anchor="start" letter-spacing="-.02em">송신 보드 ESP32-C5 ×1</text><text x="3.5" y="-49.5" font-size="3.5" font-weight="500" fill="#aab4d8" text-anchor="start">Wi-Fi 패킷을 계속 송신</text><text x="3.5" y="-44.9" font-size="3.5" font-weight="500" fill="#aab4d8" text-anchor="start">같은 패킷을 받아야 같은 기준으로 비교</text>
+<path d="M97.7 34.1 V-9.5" stroke="#8f9bc8" stroke-width=".45" fill="none"/>
+<text x="100.7" y="-25.0" font-size="4.5" font-weight="800" fill="#fff" text-anchor="end" letter-spacing="-.02em">수신 보드 ESP32-C5 ×3</text><text x="100.7" y="-19.7" font-size="3.5" font-weight="500" fill="#aab4d8" text-anchor="end">방 모서리에서 CSI 측정</text><text x="100.7" y="-15.1" font-size="3.5" font-weight="500" fill="#aab4d8" text-anchor="end">경로 3개로 어느 쪽에 있는지 구분</text>
+<text x="6.4" y="149.6" font-size="4.5" font-weight="800" fill="#fff" text-anchor="end" letter-spacing="-.02em">높이 약 1 m</text><text x="6.4" y="154.9" font-size="3.5" font-weight="500" fill="#aab4d8" text-anchor="end">신호를 가장 많이 바꾸는 몸통 높이</text>
+<path d="M-76.3 88.0 V119.0" stroke="#8f9bc8" stroke-width=".45" fill="none"/>
+<text x="-85.8" y="125.0" font-size="4.5" font-weight="800" fill="#fff" text-anchor="start" letter-spacing="-.02em">일직선 회피</text><text x="-85.8" y="130.3" font-size="3.5" font-weight="500" fill="#aab4d8" text-anchor="start">양 끝 위치 혼동 방지</text>
+<line x1="107.48" y1="68.79" x2="31.14" y2="148.83" stroke="#8f9bc8" stroke-width=".45"/>
+<line x1="104.55" y1="66.91" x2="110.42" y2="70.67" stroke="#8f9bc8" stroke-width=".45"/>
+<line x1="28.21" y1="146.96" x2="34.07" y2="150.71" stroke="#8f9bc8" stroke-width=".45"/>
+<text transform="matrix(0.6157 -0.6455 0.7880 0.5043 65.68 125.82)" font-size="4.2" font-weight="600" fill="#cbd3ee" text-anchor="middle" dominant-baseline="central">3 m × 3 m 이상</text>
+</svg></div>
+    <div class="cap b abs"><b>WaveSense가 보는 방</b><span>같은 순간, Wi-Fi 신호로 구역 4의 사람을 찾는다</span></div>
+  </div>
+
+  <section class="sec" style="left:30mm;top:496mm;width:534mm">
+    <h3 class="ttl">감지 원리<span>이 차이를 AI로 학습해 존재 · 구역 판정</span></h3>
+    <div class="waves">
+      <div><svg viewBox="0 0 170 46" width="100%" style="display:block"><line x1="0" y1="23.0" x2="170" y2="23.0" stroke="#d8dbe4" stroke-width=".5" stroke-dasharray="2 2"/><path d="M0.00 22.43 L0.77 22.47 L1.55 22.13 L2.32 22.46 L3.09 22.19 L3.86 22.33 L4.64 22.57 L5.41 22.38 L6.18 22.77 L6.95 22.65 L7.73 23.00 L8.50 23.13 L9.27 23.08 L10.05 22.98 L10.82 23.54 L11.59 23.61 L12.36 23.48 L13.14 23.38 L13.91 23.68 L14.68 23.84 L15.45 23.51 L16.23 24.07 L17.00 23.55 L17.77 23.84 L18.55 23.85 L19.32 23.77 L20.09 23.54 L20.86 23.10 L21.64 23.34 L22.41 22.96 L23.18 22.78 L23.95 22.80 L24.73 22.56 L25.50 22.74 L26.27 22.64 L27.05 22.47 L27.82 22.13 L28.59 22.25 L29.36 22.31 L30.14 22.17 L30.91 22.30 L31.68 22.46 L32.45 22.26 L33.23 22.42 L34.00 22.82 L34.77 22.76 L35.55 22.94 L36.32 22.87 L37.09 23.10 L37.86 23.50 L38.64 23.21 L39.41 23.83 L40.18 23.73 L40.95 23.59 L41.73 24.00 L42.50 23.81 L43.27 24.06 L44.05 23.65 L44.82 23.52 L45.59 23.55 L46.36 23.26 L47.14 23.48 L47.91 23.11 L48.68 23.03 L49.45 22.90 L50.23 22.83 L51.00 22.46 L51.77 22.27 L52.55 22.44 L53.32 22.24 L54.09 22.53 L54.86 22.10 L55.64 22.11 L56.41 21.91 L57.18 22.05 L57.95 22.43 L58.73 22.45 L59.50 22.38 L60.27 22.88 L61.05 22.75 L61.82 23.07 L62.59 23.25 L63.36 23.42 L64.14 23.14 L64.91 23.65 L65.68 23.69 L66.45 23.71 L67.23 23.49 L68.00 24.02 L68.77 23.83 L69.55 23.77 L70.32 23.54 L71.09 23.53 L71.86 23.43 L72.64 23.68 L73.41 23.49 L74.18 23.39 L74.95 22.94 L75.73 22.75 L76.50 23.09 L77.27 22.93 L78.05 22.77 L78.82 22.65 L79.59 22.39 L80.36 22.25 L81.14 22.39 L81.91 22.51 L82.68 22.25 L83.45 22.30 L84.23 22.22 L85.00 22.06 L85.77 22.31 L86.55 22.52 L87.32 22.58 L88.09 22.69 L88.86 23.20 L89.64 22.84 L90.41 23.05 L91.18 23.13 L91.95 23.30 L92.73 23.65 L93.50 23.74 L94.27 23.98 L95.05 23.70 L95.82 24.06 L96.59 24.05 L97.36 23.93 L98.14 23.89 L98.91 23.70 L99.68 23.77 L100.45 23.68 L101.23 23.46 L102.00 23.35 L102.77 23.04 L103.55 23.10 L104.32 22.45 L105.09 22.48 L105.86 22.65 L106.64 22.49 L107.41 22.36 L108.18 22.31 L108.95 22.43 L109.73 22.00 L110.50 21.94 L111.27 22.31 L112.05 22.38 L112.82 22.72 L113.59 22.82 L114.36 22.81 L115.14 23.00 L115.91 22.80 L116.68 23.35 L117.45 23.57 L118.23 23.14 L119.00 23.51 L119.77 23.84 L120.55 23.68 L121.32 24.05 L122.09 23.78 L122.86 23.51 L123.64 23.56 L124.41 23.61 L125.18 23.80 L125.95 23.64 L126.73 23.65 L127.50 23.16 L128.27 23.17 L129.05 22.87 L129.82 23.00 L130.59 22.92 L131.36 22.43 L132.14 22.21 L132.91 22.18 L133.68 22.13 L134.45 22.06 L135.23 22.07 L136.00 22.36 L136.77 22.20 L137.55 22.34 L138.32 22.60 L139.09 22.69 L139.86 22.65 L140.64 22.78 L141.41 22.66 L142.18 22.64 L142.95 23.09 L143.73 22.94 L144.50 23.05 L145.27 23.19 L146.05 23.66 L146.82 23.84 L147.59 23.90 L148.36 23.96 L149.14 23.98 L149.91 23.72 L150.68 23.52 L151.45 23.49 L152.23 23.63 L153.00 23.42 L153.77 23.22 L154.55 23.51 L155.32 23.03 L156.09 22.73 L156.86 22.66 L157.64 22.54 L158.41 22.58 L159.18 22.64 L159.95 22.18 L160.73 22.38 L161.50 22.05 L162.27 21.92 L163.05 22.27 L163.82 22.29 L164.59 22.01 L165.36 22.22 L166.14 22.65 L166.91 22.79 L167.68 22.91 L168.45 22.59 L169.23 22.80 L170.00 23.34" fill="none" stroke="#101a3c" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg><p><b>사람이 없을 때</b>CSI가 거의 일정</p></div>
+      <div><svg viewBox="0 0 170 46" width="100%" style="display:block"><line x1="0" y1="23.0" x2="170" y2="23.0" stroke="#d8dbe4" stroke-width=".5" stroke-dasharray="2 2"/><path d="M0.00 16.36 L0.77 16.40 L1.55 16.06 L2.32 16.37 L3.09 16.07 L3.86 16.16 L4.64 16.35 L5.41 16.09 L6.18 16.39 L6.95 16.18 L7.73 16.43 L8.50 16.47 L9.27 16.32 L10.05 16.14 L10.82 16.63 L11.59 16.65 L12.36 16.49 L13.14 16.39 L13.91 16.70 L14.68 16.91 L15.45 16.67 L16.23 17.33 L17.00 16.95 L17.77 17.41 L18.55 17.61 L19.32 17.74 L20.09 17.74 L20.86 17.55 L21.64 18.05 L22.41 17.93 L23.18 18.01 L23.95 18.28 L24.73 18.29 L25.50 18.69 L26.27 18.80 L27.05 18.82 L27.82 18.63 L28.59 18.88 L29.36 19.04 L30.14 18.96 L30.91 19.12 L31.68 19.29 L32.45 19.07 L33.23 19.19 L34.00 19.52 L34.77 19.38 L35.55 19.45 L36.32 19.29 L37.09 19.41 L37.86 19.70 L38.64 19.31 L39.41 19.84 L40.18 19.67 L40.95 19.47 L41.73 19.83 L42.50 19.62 L43.27 19.88 L44.05 19.48 L44.82 19.40 L45.59 19.48 L46.36 19.27 L47.14 19.57 L47.91 19.29 L48.68 19.31 L49.45 19.27 L50.23 19.29 L51.00 19.01 L51.77 18.89 L52.55 19.11 L53.32 18.94 L54.09 19.24 L54.86 18.80 L55.64 18.77 L56.41 18.50 L57.18 18.55 L57.95 18.81 L58.73 18.70 L59.50 18.48 L60.27 18.82 L61.05 18.52 L61.82 18.65 L62.59 18.65 L63.36 18.66 L64.14 18.21 L64.91 18.58 L65.68 18.50 L66.45 18.41 L67.23 18.13 L68.00 18.62 L68.77 18.42 L69.55 18.39 L70.32 18.23 L71.09 18.32 L71.86 18.35 L72.64 18.77 L73.41 18.76 L74.18 18.88 L74.95 18.67 L75.73 18.73 L76.50 19.34 L77.27 19.45 L78.05 19.56 L78.82 19.71 L79.59 19.72 L80.36 19.83 L81.14 20.20 L81.91 20.55 L82.68 20.51 L83.45 20.75 L84.23 20.85 L85.00 20.85 L85.77 21.25 L86.55 21.60 L87.32 21.79 L88.09 22.02 L88.86 22.67 L89.64 22.44 L90.41 22.79 L91.18 23.03 L91.95 23.37 L92.73 23.91 L93.50 24.21 L94.27 24.70 L95.05 24.69 L95.82 25.35 L96.59 25.66 L97.36 25.90 L98.14 26.24 L98.91 26.45 L99.68 26.94 L100.45 27.29 L101.23 27.51 L102.00 27.85 L102.77 28.00 L103.55 28.51 L104.32 28.30 L105.09 28.75 L105.86 29.31 L106.64 29.53 L107.41 29.75 L108.18 30.00 L108.95 30.40 L109.73 30.22 L110.50 30.37 L111.27 30.91 L112.05 31.12 L112.82 31.57 L113.59 31.75 L114.36 31.79 L115.14 32.01 L115.91 31.83 L116.68 32.38 L117.45 32.59 L118.23 32.16 L119.00 32.51 L119.77 32.84 L120.55 32.68 L121.32 33.05 L122.09 32.80 L122.86 32.56 L123.64 32.65 L124.41 32.76 L125.18 33.01 L125.95 32.93 L126.73 33.01 L127.50 32.60 L128.27 32.68 L129.05 32.45 L129.82 32.63 L130.59 32.59 L131.36 32.12 L132.14 31.89 L132.91 31.83 L133.68 31.71 L134.45 31.54 L135.23 31.41 L136.00 31.53 L136.77 31.17 L137.55 31.06 L138.32 31.05 L139.09 30.83 L139.86 30.46 L140.64 30.24 L141.41 29.74 L142.18 29.34 L142.95 29.39 L143.73 28.85 L144.50 28.56 L145.27 28.32 L146.05 28.41 L146.82 28.23 L147.59 27.96 L148.36 27.72 L149.14 27.45 L149.91 26.93 L150.68 26.50 L151.45 26.28 L152.23 26.23 L153.00 25.87 L153.77 25.53 L154.55 25.71 L155.32 25.12 L156.09 24.74 L156.86 24.58 L157.64 24.37 L158.41 24.31 L159.18 24.28 L159.95 23.70 L160.73 23.78 L161.50 23.30 L162.27 23.01 L163.05 23.18 L163.82 23.01 L164.59 22.52 L165.36 22.50 L166.14 22.69 L166.91 22.58 L167.68 22.44 L168.45 21.87 L169.23 21.82 L170.00 22.12" fill="none" stroke="#2f62ff" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg><p><b>사람이 있을 때</b>위치에 따라 패턴이 달라짐</p></div>
+      <div><svg viewBox="0 0 170 46" width="100%" style="display:block"><line x1="0" y1="23.0" x2="170" y2="23.0" stroke="#d8dbe4" stroke-width=".5" stroke-dasharray="2 2"/><path d="M0.00 19.76 L0.77 16.22 L1.55 12.15 L2.32 11.32 L3.09 9.60 L3.86 10.29 L4.64 12.24 L5.41 13.37 L6.18 16.75 L6.95 18.51 L7.73 21.68 L8.50 23.82 L9.27 25.02 L10.05 25.81 L10.82 28.63 L11.59 29.74 L12.36 30.20 L13.14 30.78 L13.91 32.61 L14.68 33.77 L15.45 32.93 L16.23 34.40 L17.00 31.55 L17.77 30.54 L18.55 27.82 L19.32 24.19 L20.09 19.79 L20.86 14.80 L21.64 12.59 L22.41 9.21 L23.18 7.74 L23.95 8.31 L24.73 9.41 L25.50 13.09 L26.27 16.76 L27.05 20.66 L27.82 23.98 L28.59 28.38 L29.36 31.75 L30.14 33.32 L30.91 34.56 L31.68 34.69 L32.45 32.54 L33.23 30.80 L34.00 29.31 L34.77 26.08 L35.55 23.70 L36.32 20.84 L37.09 19.43 L37.86 19.11 L38.64 17.03 L39.41 18.48 L40.18 17.94 L40.95 17.54 L41.73 19.15 L42.50 18.93 L43.27 20.31 L44.05 19.57 L44.82 19.96 L45.59 21.08 L46.36 21.41 L47.14 23.72 L47.91 24.39 L48.68 26.22 L49.45 27.96 L50.23 29.85 L51.00 30.44 L51.77 31.07 L52.55 32.14 L53.32 31.01 L54.09 30.53 L54.86 26.67 L55.64 23.46 L56.41 19.01 L57.18 15.53 L57.95 13.12 L58.73 10.22 L59.50 8.07 L60.27 9.15 L61.05 9.51 L61.82 12.69 L62.59 16.48 L63.36 20.99 L64.14 24.20 L64.91 29.84 L65.68 33.26 L66.45 35.59 L67.23 36.01 L68.00 37.72 L68.77 35.97 L69.55 33.88 L70.32 30.76 L71.09 28.18 L71.86 25.42 L72.64 24.16 L73.41 21.80 L74.18 20.17 L74.95 17.66 L75.73 16.25 L76.50 16.69 L77.27 15.54 L78.05 14.41 L78.82 13.60 L79.59 12.65 L80.36 12.56 L81.14 14.05 L81.91 16.25 L82.68 17.94 L83.45 21.27 L84.23 24.58 L85.00 27.63 L85.77 31.69 L86.55 34.90 L87.32 36.52 L88.09 36.97 L88.86 37.43 L89.64 33.70 L90.41 30.85 L91.18 26.88 L91.95 22.98 L92.73 19.89 L93.50 16.54 L94.27 14.64 L95.05 12.14 L95.82 12.94 L96.59 13.60 L97.36 14.83 L98.14 17.04 L98.91 19.10 L99.68 22.14 L100.45 24.51 L101.23 26.11 L102.00 27.63 L102.77 28.04 L103.55 29.18 L104.32 27.57 L105.09 27.89 L105.86 28.45 L106.64 27.78 L107.41 27.09 L108.18 26.53 L108.95 26.44 L109.73 24.31 L110.50 23.18 L111.27 23.16 L112.05 21.79 L112.82 21.02 L113.59 19.26 L114.36 17.03 L115.14 15.61 L115.91 13.33 L116.68 14.15 L117.45 14.76 L118.23 14.21 L119.00 17.33 L119.77 21.24 L120.55 24.23 L121.32 29.30 L122.09 32.19 L122.86 34.56 L123.64 37.03 L124.41 38.27 L125.18 38.53 L125.95 36.21 L126.73 33.21 L127.50 27.66 L128.27 23.33 L129.05 18.07 L129.82 14.76 L130.59 11.72 L131.36 8.53 L132.14 7.50 L132.91 8.35 L133.68 10.08 L134.45 12.44 L135.23 15.39 L136.00 19.28 L136.77 21.38 L137.55 24.04 L138.32 26.62 L139.09 28.19 L139.86 28.96 L140.64 30.10 L141.41 30.23 L142.18 30.62 L142.95 32.40 L143.73 31.93 L144.50 31.90 L145.27 31.43 L146.05 31.35 L146.82 29.59 L147.59 26.80 L148.36 23.55 L149.14 19.95 L149.91 15.63 L150.68 12.07 L151.45 10.01 L152.23 9.65 L153.00 9.46 L153.77 10.56 L154.55 14.47 L155.32 16.62 L156.09 19.87 L156.86 23.92 L157.64 27.43 L158.41 30.74 L159.18 33.20 L159.95 32.81 L160.73 33.55 L161.50 31.54 L162.27 29.43 L163.05 28.36 L163.82 25.96 L164.59 22.54 L165.36 20.92 L166.14 20.38 L166.91 19.29 L167.68 18.54 L168.45 16.77 L169.23 17.04 L170.00 18.68" fill="none" stroke="#ff5a1f" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/></svg><p><b>사람이 움직일 때</b>CSI가 크게 흔들림</p></div>
+    </div>
+  </section>
+
+  <section class="sec" style="left:30mm;top:584mm;width:534mm">
+    <h3 class="ttl">시스템 구성<span>저가 ESP32 보드 4대와 노트북 한 대로 구성</span></h3>
+    <div class="chain"><div class="node"><svg viewBox="0 0 27 20" width="21.6mm" height="16mm"><rect x="1" y="3" width="24" height="14" rx="2.4" fill="#101a3c"/><text x="13" y="10.3" font-size="6.2" font-weight="800" fill="#fff" text-anchor="middle" dominant-baseline="central">TX</text></svg><p><b>송신 보드 ESP32-C5 ×1</b><span>Wi-Fi 패킷을 계속 송신</span></p></div><div class="link"><span>Wi-Fi 신호<br>(사람이 있으면 변형)</span><svg viewBox="0 0 24 8" width="19mm" height="6.3mm"><path d="M1 4 H22 M18.5 1 L22 4 L18.5 7" fill="none" stroke="#101a3c" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="node"><svg viewBox="0 0 27 20" width="21.6mm" height="16mm"><rect x="6.2" y="1.0" width="21" height="12" rx="2.2" fill="#2f62ff" stroke="#f5f3ee" stroke-width=".8"/><rect x="3.6" y="4.2" width="21" height="12" rx="2.2" fill="#2f62ff" stroke="#f5f3ee" stroke-width=".8"/><rect x="1.0" y="7.4" width="21" height="12" rx="2.2" fill="#2f62ff" stroke="#f5f3ee" stroke-width=".8"/><text x="11.5" y="13.7" font-size="5.6" font-weight="800" fill="#fff" text-anchor="middle" dominant-baseline="central">RX</text></svg><p><b>수신 보드 ESP32-C5 ×3</b><span>방 모서리에서 CSI 측정</span></p></div><div class="link"><span>USB 시리얼</span><svg viewBox="0 0 24 8" width="19mm" height="6.3mm"><path d="M1 4 H22 M18.5 1 L22 4 L18.5 7" fill="none" stroke="#101a3c" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="node"><svg viewBox="0 0 27 20" width="21.6mm" height="16mm"><rect x="4" y="1.5" width="19" height="13" rx="1.6" fill="#fff" stroke="#101a3c" stroke-width="1.1"/><path d="M1 18 H26" stroke="#101a3c" stroke-width="1.8" stroke-linecap="round"/><path d="M7 10.5 l3 -3 l2.6 2 l3 -4 l2.6 2.6 l2 -1" fill="none" stroke="#2f62ff" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></svg><p><b>노트북 (Python) + 웹캠</b><span>수집 → 전처리 → AI 판정</span></p></div><div class="link"><span>감지 결과 전송</span><svg viewBox="0 0 24 8" width="19mm" height="6.3mm"><path d="M1 4 H22 M18.5 1 L22 4 L18.5 7" fill="none" stroke="#101a3c" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="node"><svg viewBox="0 0 27 20" width="21.6mm" height="16mm"><rect x="3" y="1" width="21" height="18" rx="1.6" fill="#fff" stroke="#101a3c" stroke-width="1.1"/><rect x="13.5" y="10" width="10" height="8.5" fill="#ff5a1f"/><path d="M13.5 1.5 V18.5 M3.5 10 H23.5" stroke="#101a3c" stroke-width=".6"/></svg><p><b>웹/앱 대시보드</b><span>구역별 감지 · 웹캠과 비교 표시</span></p></div></div>
+  </section>
+
+  <section class="sec" style="left:30mm;top:636mm;width:330mm">
+    <h3 class="ttl">동작 시나리오<span>학습된 모델을 판정 단계에 적용</span></h3>
+    <div class="track"><h4>학습 단계</h4><ol><li class=""><b>구역별 수집</b><span>구역 번호(0~4) 붙여 저장</span></li><li class=""><b>전처리</b><span>진폭 계산 · 4초 단위 분할</span></li><li class=""><b>모델 학습</b><span>존재 · 구역 판정 모델</span></li><li class="end"><b>평가</b><span>다른 날 수집한 데이터로 검증</span></li></ol></div>
+    <div class="track"><h4>판정 단계</h4><ol><li class=""><b>실시간 수집</b><span>수신 보드 3대 CSI 동시 수집</span></li><li class=""><b>분석</b><span>같은 방식으로 전처리</span></li><li class=""><b>판정</b><span>존재 여부 + 구역 판정</span></li><li class="end"><b>표시</b><span>웹캠이 놓친 구역 강조</span></li></ol></div>
+  </section>
+
+  <section class="sec" style="left:374mm;top:636mm;width:190mm">
+    <h3 class="ttl">화면 설계<span>웹캠과 나란히 비교</span></h3>
+    <div style="margin-top:5mm"><svg viewBox="0 0 166 68" width="100%" font-family="Pretendard, 'Apple SD Gothic Neo', sans-serif" style="display:block"><rect x=".6" y=".6" width="164.8" height="66.8" rx="2.5" fill="#fff" stroke="#101a3c" stroke-width="1.1"/><path d="M.6 9.5 V3.1 a2.5 2.5 0 0 1 2.5 -2.5 H162.9 a2.5 2.5 0 0 1 2.5 2.5 V9.5 Z" fill="#101a3c"/><text x="5.5" y="5.3" font-size="4.2" font-weight="700" fill="#fff" dominant-baseline="central">WaveSense · 실시간 감지</text><rect x="6" y="15" width="47" height="47" fill="#e9edf7"/><rect x="29.5" y="38.5" width="23.5" height="23.5" fill="#ff5a1f"/><path d="M29.5 15 V62 M6 38.5 H53" stroke="#fff" stroke-width="1"/><text x="17.75" y="26.75" font-size="5.6" font-weight="700" fill="#9aa3bd" text-anchor="middle" dominant-baseline="central">1</text><text x="41.25" y="26.75" font-size="5.6" font-weight="700" fill="#9aa3bd" text-anchor="middle" dominant-baseline="central">2</text><text x="17.75" y="50.25" font-size="5.6" font-weight="700" fill="#9aa3bd" text-anchor="middle" dominant-baseline="central">3</text><g opacity="1.0"><rect x="38.45" y="49.99" width="2.32" height="8.72" rx="1.16" fill="#fff" stroke="none" stroke-width="0"/><rect x="41.73" y="49.99" width="2.32" height="8.72" rx="1.16" fill="#fff" stroke="none" stroke-width="0"/><rect x="38.37" y="46.95" width="5.76" height="5.36" rx="2.07" fill="#fff" stroke="none" stroke-width="0"/><circle cx="41.25" cy="44.55" r="1.84" fill="#fff" stroke="none" stroke-width="0"/></g><line x1="59" y1="23.7" x2="109" y2="23.7" stroke="#d8dbe4" stroke-width=".3"/><text x="61.5" y="19.2" font-size="4.3" font-weight="700" fill="#101a3c" dominant-baseline="central">구역 1</text><text x="106.5" y="19.2" font-size="4.3" font-weight="500" fill="#8088a0" text-anchor="end" dominant-baseline="central">없음</text><line x1="59" y1="33.099999999999994" x2="109" y2="33.099999999999994" stroke="#d8dbe4" stroke-width=".3"/><text x="61.5" y="28.599999999999998" font-size="4.3" font-weight="700" fill="#101a3c" dominant-baseline="central">구역 2</text><text x="106.5" y="28.599999999999998" font-size="4.3" font-weight="500" fill="#8088a0" text-anchor="end" dominant-baseline="central">없음</text><line x1="59" y1="42.5" x2="109" y2="42.5" stroke="#d8dbe4" stroke-width=".3"/><text x="61.5" y="38.0" font-size="4.3" font-weight="700" fill="#101a3c" dominant-baseline="central">구역 3</text><text x="106.5" y="38.0" font-size="4.3" font-weight="500" fill="#8088a0" text-anchor="end" dominant-baseline="central">없음</text><rect x="59" y="43.2" width="50" height="8" fill="#ffd9c9"/><line x1="59" y1="51.900000000000006" x2="109" y2="51.900000000000006" stroke="#d8dbe4" stroke-width=".3"/><text x="61.5" y="47.400000000000006" font-size="4.3" font-weight="700" fill="#101a3c" dominant-baseline="central">구역 4</text><text x="106.5" y="47.400000000000006" font-size="4.3" font-weight="800" fill="#ff5a1f" text-anchor="end" dominant-baseline="central">사람 감지</text><text x="59" y="58.6" font-size="3.8" font-weight="600" fill="#48536f" dominant-baseline="central">판정 신뢰도</text><rect x="79" y="57.3" width="30" height="2.6" fill="#d8dbe4"/><rect x="79" y="57.3" width="24.0" height="2.6" fill="#101a3c"/><rect x="115" y="15" width="45" height="37.6" fill="#c3c9d8"/><rect x="115" y="40" width="45" height="12.600000000000001" fill="#aab2c6"/><rect x="134" y="23" width="21" height="27" fill="#69738f"/><circle cx="119.2" cy="19.4" r="1.3" fill="#ff4d3d"/><text x="122" y="19.5" font-size="3.4" font-weight="700" fill="#101a3c" dominant-baseline="central">웹캠</text><text x="137.5" y="58.6" font-size="3.9" font-weight="700" fill="#48536f" text-anchor="middle" dominant-baseline="central">웹캠: 구역 4 미감지</text></svg></div>
+  </section>
+
+  <section class="sec" style="left:30mm;top:743mm;width:330mm">
+    <h3 class="ttl">차별성<span>CCTV와 함께 쓰는 보조 감지</span></h3>
+    <ul class="cols" style="grid-template-columns:repeat(3,1fr)">
+      <li><b>CCTV · 적외선 카메라</b>가려진 곳, 카메라를 둘 수 없는 공간도 감지</li>
+      <li><b>레이더 센서</b>전용 센서 대신 저가 ESP32 보드 활용</li>
+      <li><b>상용 Wi-Fi 감지</b>카메라와 결합해 사각지대 미감지 감소를 검증</li>
+    </ul>
+  </section>
+
+  <section class="sec" style="left:374mm;top:743mm;width:190mm">
+    <h3 class="ttl">활용 분야 및 기대 효과</h3>
+    <ul class="cols" style="grid-template-columns:1fr 1fr">
+      <li><b>보안</b>CCTV 사각지대 보완</li>
+      <li><b>돌봄</b>독거 가구 · 유아 재실 확인</li>
+      <li><b>스마트홈</b>빈 방 조명 · 냉난방 자동 제어</li>
+      <li><b>사생활 공간 안전</b>장시간 무움직임 감지 (확장 검토)</li>
+    </ul>
+  </section>
+
+  <div class="foot">
+    <p><b>개발 환경</b>ESP32-C5 · Espressif ESP-IDF · Python · 웹 프레임워크</p>
+    <p><b>참고 자료</b>Espressif ESP-CSI · Yan et al., Person-in-WiFi 3D (CVPR 2024) · Strohmayer &amp; Kampel, Through-Wall HAR with the ESP32 (ICVS 2023)</p>
+  </div>
+
+</div>
+</body>
+</html>

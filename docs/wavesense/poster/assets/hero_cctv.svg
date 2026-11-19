@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-88.3 -47.8 192.1 204.4" width="172.0mm" height="183.1mm" font-family="Pretendard, 'Apple SD Gothic Neo', sans-serif">
+<defs><clipPath id="shadow-cctv"><polygon points="10.69,71.29 47.33,94.74 57.91,104.27 21.37,142.58 -15.85,118.75 -17.94,101.30"/></clipPath><clipPath id="floor-cctv"><polygon points="0.00,0.00 97.71,62.54 21.37,142.58 -76.34,80.04"/></clipPath></defs>
+<polygon points="-0.53,6.39 102.06,72.06 21.91,156.10 -80.69,90.44" fill="#060b22"/>
+<polygon points="-76.34,80.04 21.37,142.58 21.37,145.60 -76.34,83.06" fill="#6f7aa0"/>
+<polygon points="97.71,62.54 21.37,142.58 21.37,145.60 97.71,65.56" fill="#8a94b4"/>
+<polygon points="0.00,0.00 -76.34,80.04 -76.34,40.21 0.00,-39.83" fill="#99a3be"/>
+<polygon points="0.00,0.00 97.71,62.54 97.71,22.71 0.00,-39.83" fill="#afb7cd"/>
+<line x1="-76.34" y1="40.21" x2="0.00" y2="-39.83" stroke="#e3e8f5" stroke-width="1" stroke-linecap="round"/>
+<line x1="0.00" y1="-39.83" x2="97.71" y2="22.71" stroke="#e3e8f5" stroke-width="1" stroke-linecap="round"/>
+<polygon points="0.00,0.00 97.71,62.54 21.37,142.58 -76.34,80.04" fill="#f1f3f9"/>
+<polygon points="10.69,71.29 47.33,94.74 57.91,104.27 21.37,142.58 -15.85,118.75 -17.94,101.30" fill="#1c2654"/>
+<g clip-path="url(#shadow-cctv)"><line x1="14.50" y1="67.29" x2="-31.30" y2="115.31" stroke="#3a4682" stroke-width=".6"/><line x1="18.90" y1="70.10" x2="-26.91" y2="118.13" stroke="#3a4682" stroke-width=".6"/><line x1="23.30" y1="72.92" x2="-22.51" y2="120.94" stroke="#3a4682" stroke-width=".6"/><line x1="27.69" y1="75.73" x2="-18.11" y2="123.75" stroke="#3a4682" stroke-width=".6"/><line x1="32.09" y1="78.54" x2="-13.71" y2="126.57" stroke="#3a4682" stroke-width=".6"/><line x1="36.49" y1="81.36" x2="-9.32" y2="129.38" stroke="#3a4682" stroke-width=".6"/><line x1="40.89" y1="84.17" x2="-4.92" y2="132.20" stroke="#3a4682" stroke-width=".6"/><line x1="45.28" y1="86.99" x2="-0.52" y2="135.01" stroke="#3a4682" stroke-width=".6"/><line x1="49.68" y1="89.80" x2="3.87" y2="137.82" stroke="#3a4682" stroke-width=".6"/><line x1="54.08" y1="92.61" x2="8.27" y2="140.64" stroke="#3a4682" stroke-width=".6"/><line x1="58.47" y1="95.43" x2="12.67" y2="143.45" stroke="#3a4682" stroke-width=".6"/><line x1="62.87" y1="98.24" x2="17.07" y2="146.27" stroke="#3a4682" stroke-width=".6"/><line x1="67.27" y1="101.06" x2="21.46" y2="149.08" stroke="#3a4682" stroke-width=".6"/></g>
+<line x1="48.86" y1="31.27" x2="-27.49" y2="111.31" stroke="#9aa4c4" stroke-width=".6" stroke-dasharray="2.2 2.2"/>
+<line x1="-38.17" y1="40.02" x2="59.54" y2="102.56" stroke="#9aa4c4" stroke-width=".6" stroke-dasharray="2.2 2.2"/>
+<text transform="matrix(0.7880 0.5043 -0.6157 0.6455 23.08 30.24)" font-size="15" font-weight="800" fill="#98a2c0" opacity="1.0" text-anchor="middle" dominant-baseline="central">1</text>
+<text transform="matrix(0.7880 0.5043 -0.6157 0.6455 64.43 64.44)" font-size="15" font-weight="800" fill="#98a2c0" opacity="1.0" text-anchor="middle" dominant-baseline="central">2</text>
+<text transform="matrix(0.7880 0.5043 -0.6157 0.6455 -43.49 75.29)" font-size="15" font-weight="800" fill="#98a2c0" opacity="1.0" text-anchor="middle" dominant-baseline="central">3</text>
+<text transform="matrix(0.7880 0.5043 -0.6157 0.6455 -10.84 110.36)" font-size="15" font-weight="800" fill="#7f8cc4" opacity="1.0" text-anchor="middle" dominant-baseline="central">4</text>
+<polygon points="-13.52,2.61 97.71,62.54 57.91,104.27 47.33,94.74 10.69,71.29 -17.94,101.30 -15.85,118.75 -76.34,80.04" fill="#fff" opacity=".2"/>
+<line x1="-13.52" y1="2.61" x2="57.91" y2="104.27" stroke="#fff" stroke-width=".7" stroke-dasharray="2 1.8"/>
+<line x1="-13.52" y1="2.61" x2="-15.85" y2="118.75" stroke="#fff" stroke-width=".7" stroke-dasharray="2 1.8"/>
+<g opacity="1"><line x1="-26.72" y1="-3.99" x2="-22.72" y2="-2.49" stroke="#0d1637" stroke-width="1.6" stroke-linecap="round"/><g transform="translate(-23.72 -2.79) rotate(27)"><rect x="0" y="-3.6" width="12.5" height="7.2" rx="2.2" fill="#0d1637" stroke="#fff" stroke-width=".6"/><rect x="10.4" y="-2.6" width="3" height="5.2" rx="1" fill="#2a376e" stroke="#fff" stroke-width=".5"/><circle cx="3" cy="0" r="1" fill="#ff4d3d"/></g></g>
+<polygon points="10.69,71.29 -17.94,101.30 -17.94,63.96 10.69,33.95" fill="#414b78"/>
+<polygon points="10.69,71.29 47.33,94.74 47.33,57.40 10.69,33.95" fill="#566190"/>
+<polygon points="47.33,94.74 49.24,92.74 49.24,55.40 47.33,57.40" fill="#6b76a6"/>
+<polygon points="-17.94,101.30 -20.39,99.74 -20.39,62.40 -17.94,63.96" fill="#333c66"/>
+<polygon points="10.69,33.95 47.33,57.40 49.24,55.40 10.15,30.38 -20.39,62.40 -17.94,63.96" fill="#8a95c2"/>
+<text transform="matrix(0.8423 0.5390 0 1 29.25 64.50)" font-size="5.6" font-weight="700" fill="#fff" opacity=".8" text-anchor="middle" dominant-baseline="central">장애물</text>
+<g opacity="1.0"><rect x="8.76" y="82.76" width="5.67" height="21.32" rx="2.84" fill="#2a356a" stroke="#9aa6d2" stroke-width="0.7" stroke-dasharray="2 1.6"/><rect x="16.77" y="82.76" width="5.67" height="21.32" rx="2.84" fill="#2a356a" stroke="#9aa6d2" stroke-width="0.7" stroke-dasharray="2 1.6"/><rect x="8.56" y="75.33" width="14.08" height="13.10" rx="5.07" fill="#2a356a" stroke="#9aa6d2" stroke-width="0.7" stroke-dasharray="2 1.6"/><circle cx="15.60" cy="69.46" r="4.50" fill="#2a356a" stroke="#9aa6d2" stroke-width="0.7" stroke-dasharray="2 1.6"/></g>
+<text x="-30.7" y="-13.0" font-size="6" font-weight="800" fill="#fff" text-anchor="end" letter-spacing=".04em">CCTV</text>
+</svg>
