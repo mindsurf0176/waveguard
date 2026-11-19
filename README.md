@@ -43,6 +43,12 @@ ZIP에는 실행 파일, 사용법, 샘플 CSV, 소스 코드와 테스트가 �
 
 ## WaveSense 공학설계 자료
 
+프로젝트 이름은 WaveSense입니다. 저장소와 오프라인 데모는 기존 이름인 WaveGuard를 유지합니다.
+
+- [방향 정리](docs/wavesense/research/SUMMARY.md): 자세 추정을 필수로 둔 범위, 장비, 데이터 수집 계획
+- [자세 추정 문헌 조사](docs/wavesense/research/pose_lit_review.md)
+- [공개 데이터 사전 검증](docs/wavesense/validation/results.md): Wallhack1.8k, TU Wien. 차트와 CSV는 `docs/wavesense/validation/results/`에 있습니다. 재실행용 중간 피클 `results/fa_runs.pkl`(약 3.4MB)은 넣지 않았습니다.
+- [포스터 v7 A1](docs/wavesense/WaveSense_poster_A1_v7.jpg) · [미리보기](docs/wavesense/WaveSense_poster_preview_v7.png) · [HTML](docs/wavesense/WaveSense_poster_v7.html). HTML이 가리키는 화면 이미지(`assets/hero_v4.jpg`, `v7_screens/`)는 아카이브에 없어서, 보이는 완성본은 JPG와 미리보기 PNG입니다.
 - [A1 포스터 PDF](docs/wavesense/WaveSense_포스터_A1.pdf) · [실사 버전 PDF](docs/wavesense/WaveSense_포스터_A1_실사.pdf) · [포스터 제작 소스](docs/wavesense/poster/)
 - [발표 예상 질문·답변 v4](docs/wavesense/WaveSense_예상질문답변_v4.pdf) · [발표 피드백과 적용 분야](docs/wavesense/WaveSense_피드백반영_적용분야_2026-11-19.md)
 - [구현 가능성 문헌조사](docs/wavesense/WaveSense_구현가능성_문헌조사_2026-11-19.md)

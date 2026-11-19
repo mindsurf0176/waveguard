@@ -1,0 +1,26 @@
+base (1754, 437) eval windows 1643
+   base LR done
+   base RF done
+   base ENS done
+hampel (1754, 437) eval windows 1643
+   hampel LR done
+   hampel ENS done
+hampel+lowpass (1754, 437) eval windows 1643
+   hampel+lowpass LR done
+   hampel+lowpass ENS done
+movavg (1754, 437) eval windows 1643
+   movavg LR done
+   movavg ENS done
+ratio (1754, 433) eval windows 1643
+   ratio LR done
+   ratio ENS done
+hampel+ratio (1754, 433) eval windows 1643
+   hampel+ratio LR done
+   hampel+ratio ENS done
+pca(drop1st) (1754, 25) eval windows 1643
+   pca(drop1st) LR done
+   pca(drop1st) ENS done
+overlap1s (6948, 437) eval windows 6504
+   overlap1s LR done
+   overlap1s ENS done
+saved

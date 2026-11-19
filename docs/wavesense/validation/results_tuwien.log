@@ -1,0 +1,58 @@
+DP_LOS/room6(0=empty,1-5)/raw 1_provided-8:1:1-split(random)           RF acc=0.769 bal=0.783 maj=0.231
+DP_LOS/room6(0=empty,1-5)/raw 1_provided-8:1:1-split(random)           LR acc=0.641 bal=0.668 maj=0.231
+DP_LOS/room6(0=empty,1-5)/raw 2_temporal-block-5fold                   RF acc=0.765 bal=0.761 maj=0.191
+DP_LOS/room6(0=empty,1-5)/raw 2_temporal-block-5fold                   LR acc=0.699 bal=0.694 maj=0.191
+DP_LOS/room6(0=empty,1-5)/raw 2b_train-first60%-test-last20%           RF acc=0.701 bal=0.707 maj=0.195
+DP_LOS/room6(0=empty,1-5)/raw 2b_train-first60%-test-last20%           LR acc=0.714 bal=0.713 maj=0.195
+DP_LOS/presence/raw          1_provided-8:1:1-split(random)           RF acc=0.974 bal=0.917 maj=0.846
+DP_LOS/presence/raw          1_provided-8:1:1-split(random)           LR acc=1.000 bal=1.000 maj=0.846
+DP_LOS/presence/raw          2_temporal-block-5fold                   RF acc=0.984 bal=0.960 maj=0.809
+DP_LOS/presence/raw          2_temporal-block-5fold                   LR acc=0.997 bal=0.993 maj=0.809
+DP_LOS/presence/raw          2b_train-first60%-test-last20%           RF acc=0.935 bal=0.833 maj=0.805
+DP_LOS/presence/raw          2b_train-first60%-test-last20%           LR acc=0.974 bal=0.933 maj=0.805
+DP_LOS/room6(0=empty,1-5)/rel 1_provided-8:1:1-split(random)           RF acc=0.718 bal=0.708 maj=0.231
+DP_LOS/room6(0=empty,1-5)/rel 1_provided-8:1:1-split(random)           LR acc=0.513 bal=0.504 maj=0.231
+DP_LOS/room6(0=empty,1-5)/rel 2_temporal-block-5fold                   RF acc=0.612 bal=0.601 maj=0.191
+DP_LOS/room6(0=empty,1-5)/rel 2_temporal-block-5fold                   LR acc=0.519 bal=0.503 maj=0.191
+DP_LOS/room6(0=empty,1-5)/rel 2b_train-first60%-test-last20%           RF acc=0.506 bal=0.490 maj=0.195
+DP_LOS/room6(0=empty,1-5)/rel 2b_train-first60%-test-last20%           LR acc=0.506 bal=0.492 maj=0.195
+DP_LOS/presence/rel          1_provided-8:1:1-split(random)           RF acc=0.974 bal=0.917 maj=0.846
+DP_LOS/presence/rel          1_provided-8:1:1-split(random)           LR acc=0.923 bal=0.886 maj=0.846
+DP_LOS/presence/rel          2_temporal-block-5fold                   RF acc=0.954 bal=0.880 maj=0.809
+DP_LOS/presence/rel          2_temporal-block-5fold                   LR acc=0.873 bal=0.860 maj=0.809
+DP_LOS/presence/rel          2b_train-first60%-test-last20%           RF acc=0.909 bal=0.767 maj=0.805
+DP_LOS/presence/rel          2b_train-first60%-test-last20%           LR acc=0.844 bal=0.777 maj=0.805
+DP_NLOS/room6(0=empty,1-5)/raw 1_provided-8:1:1-split(random)           RF acc=0.868 bal=0.848 maj=0.237
+DP_NLOS/room6(0=empty,1-5)/raw 1_provided-8:1:1-split(random)           LR acc=0.737 bal=0.697 maj=0.237
+DP_NLOS/room6(0=empty,1-5)/raw 2_temporal-block-5fold                   RF acc=0.854 bal=0.851 maj=0.182
+DP_NLOS/room6(0=empty,1-5)/raw 2_temporal-block-5fold                   LR acc=0.813 bal=0.806 maj=0.182
+DP_NLOS/room6(0=empty,1-5)/raw 2b_train-first60%-test-last20%           RF acc=0.895 bal=0.893 maj=0.184
+DP_NLOS/room6(0=empty,1-5)/raw 2b_train-first60%-test-last20%           LR acc=0.737 bal=0.728 maj=0.184
+DP_NLOS/presence/raw         1_provided-8:1:1-split(random)           RF acc=1.000 bal=1.000 maj=0.842
+DP_NLOS/presence/raw         1_provided-8:1:1-split(random)           LR acc=0.974 bal=0.917 maj=0.842
+DP_NLOS/presence/raw         2_temporal-block-5fold                   RF acc=0.984 bal=0.957 maj=0.818
+DP_NLOS/presence/raw         2_temporal-block-5fold                   LR acc=0.953 bal=0.905 maj=0.818
+DP_NLOS/presence/raw         2b_train-first60%-test-last20%           RF acc=1.000 bal=1.000 maj=0.816
+DP_NLOS/presence/raw         2b_train-first60%-test-last20%           LR acc=0.868 bal=0.643 maj=0.816
+DP_NLOS/room6(0=empty,1-5)/rel 1_provided-8:1:1-split(random)           RF acc=0.974 bal=0.972 maj=0.237
+DP_NLOS/room6(0=empty,1-5)/rel 1_provided-8:1:1-split(random)           LR acc=0.632 bal=0.575 maj=0.237
+DP_NLOS/room6(0=empty,1-5)/rel 2_temporal-block-5fold                   RF acc=0.854 bal=0.851 maj=0.182
+DP_NLOS/room6(0=empty,1-5)/rel 2_temporal-block-5fold                   LR acc=0.719 bal=0.709 maj=0.182
+DP_NLOS/room6(0=empty,1-5)/rel 2b_train-first60%-test-last20%           RF acc=0.789 bal=0.781 maj=0.184
+DP_NLOS/room6(0=empty,1-5)/rel 2b_train-first60%-test-last20%           LR acc=0.645 bal=0.638 maj=0.184
+DP_NLOS/presence/rel         1_provided-8:1:1-split(random)           RF acc=1.000 bal=1.000 maj=0.842
+DP_NLOS/presence/rel         1_provided-8:1:1-split(random)           LR acc=0.947 bal=0.901 maj=0.842
+DP_NLOS/presence/rel         2_temporal-block-5fold                   RF acc=0.992 bal=0.984 maj=0.818
+DP_NLOS/presence/rel         2_temporal-block-5fold                   LR acc=0.922 bal=0.869 maj=0.818
+DP_NLOS/presence/rel         2b_train-first60%-test-last20%           RF acc=1.000 bal=1.000 maj=0.816
+DP_NLOS/presence/rel         2b_train-first60%-test-last20%           LR acc=0.829 bal=0.646 maj=0.816
+presence/raw                 3_cross DP_LOS->DP_NLOS                  RF acc=0.854 bal=0.600 maj=0.818
+presence/raw                 3_cross DP_LOS->DP_NLOS                  LR acc=0.852 bal=0.593 maj=0.818
+presence/raw                 3_cross DP_NLOS->DP_LOS                  RF acc=0.934 bal=0.827 maj=0.809
+presence/raw                 3_cross DP_NLOS->DP_LOS                  LR acc=0.311 bal=0.574 maj=0.809
+presence/rel                 3_cross DP_LOS->DP_NLOS                  RF acc=0.818 bal=0.500 maj=0.818
+presence/rel                 3_cross DP_LOS->DP_NLOS                  LR acc=0.807 bal=0.494 maj=0.818
+presence/rel                 3_cross DP_NLOS->DP_LOS                  RF acc=0.862 bal=0.640 maj=0.809
+presence/rel                 3_cross DP_NLOS->DP_LOS                  LR acc=0.204 bal=0.508 maj=0.809
+DP_LOS class counts {np.int64(0): np.int64(75), np.int64(1): np.int64(58), np.int64(2): np.int64(63), np.int64(3): np.int64(65), np.int64(4): np.int64(66), np.int64(5): np.int64(65)}
+DP_NLOS class counts {np.int64(0): np.int64(70), np.int64(1): np.int64(60), np.int64(2): np.int64(61), np.int64(3): np.int64(65), np.int64(4): np.int64(65), np.int64(5): np.int64(63)}
