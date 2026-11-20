@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><title>WaveSense A1 v7</title><style>
+:root{--bg:#E9EAEE;--cream:#F5F2EB;--pink:#F6E9E1;--line:#B9BFCC;--navy:#1B2E52;--ink:#16203A;--mid:#5B6070;--or:#D9631E}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:2150px;height:3044px;overflow:hidden;background:var(--bg)}
+body{font-family:'Pretendard',sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;word-break:keep-all}
+svg text{font-family:'Pretendard',sans-serif}
+.page{position:relative;width:2150px;height:3044px;padding:46px 90px 0}
+.bx{background:var(--line);padding:2.5px;height:100%}
+.in{height:100%;padding:26px 34px}
+.row{display:flex;gap:26px;margin-top:24px}
+.sh{display:flex;align-items:flex-end;gap:20px}
+.num{font-family:'Barlow Condensed';font-weight:800;font-size:132px;line-height:.78;color:var(--navy);letter-spacing:-2px}
+.tt{font-size:38px;font-weight:900;letter-spacing:-1px;padding-bottom:8px;border-bottom:5px solid var(--or);display:inline-block;line-height:1.1}
+.st{font-size:21px;font-weight:600;color:var(--mid);margin-top:10px}
+.sh.stack{flex-direction:column;align-items:flex-start;gap:14px}
+.sh.lt .num{color:#fff} .sh.lt .tt{color:#fff} .sh.lt .st{color:rgba(255,255,255,.75)}
+.lead{font-size:32px;font-weight:900;letter-spacing:-1px;line-height:1.28;margin-top:20px}
+.tx{font-size:25px;line-height:1.48;color:#2E3448} .tx.sm{font-size:22px}
+.or{color:var(--or)}
+.cap{font-size:17px;color:var(--mid);line-height:1.45}
+.step{background:#fff;border:2px solid #DCDFE6;border-radius:14px;padding:10px 12px 6px;margin-top:14px}
+.sth{font-size:22px;font-weight:900;display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.sn{width:32px;height:32px;border-radius:50%;background:var(--or);color:#fff;font-size:18px;display:flex;align-items:center;justify-content:center}
+.down{display:flex;justify-content:center;margin:8px 0 -10px}
+.chips{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:26px}
+.legend{display:flex;gap:40px;font-size:21px;font-weight:700;color:#2E3448;margin-top:22px;align-items:center}
+.legend i{display:inline-block;vertical-align:middle;margin-right:10px}
+.chip{background:#fff;border:2px solid #DCDFE6;border-radius:14px;padding:16px 18px;font-size:22px;font-weight:700;color:#2E3448;line-height:1.35}
+.chip b{display:block;font-size:17px;color:var(--or);letter-spacing:1px;margin-bottom:2px}
+.band{background:var(--navy);color:#fff}
+.flow{flex:1;display:flex;align-items:flex-start;justify-content:space-between}
+.farr{margin-top:54px}
+.fc{display:flex;flex-direction:column;align-items:center;width:230px}
+.circ{width:128px;height:128px;border-radius:50%;border:3px solid #fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.circ span{font-size:26px;font-weight:900}
+.fc:last-child .circ{background:var(--or);border-color:var(--or)}
+.fd{font-size:19px;opacity:.85;margin-top:10px;text-align:center;white-space:nowrap}
+.sample{font-size:18px;font-weight:800;color:#fff;background:var(--or);border-radius:8px;padding:4px 12px}
+.ex{font-size:16px;font-weight:800;color:var(--or);border:2.5px dashed var(--or);border-radius:7px;padding:1px 8px;vertical-align:middle}
+.dash{width:540px;background:#fff;border:3px solid var(--navy);border-radius:16px;overflow:hidden}
+.dh{background:var(--navy);color:#fff;padding:10px 16px;display:flex;justify-content:space-between;font-size:18px;font-weight:800}
+.kv{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #E3E5EA} .kv span{color:#5B6070}
+.frame{width:240px;height:520px;border-radius:42px;background:#141A2A;padding:9px;position:relative;box-shadow:0 20px 40px -20px rgba(20,30,60,.5)}
+.frame img{width:222px;height:502px;border-radius:34px;display:block}
+.island{position:absolute;top:16px;left:50%;transform:translateX(-50%);width:70px;height:20px;border-radius:10px;background:#000}
+.plab{font-size:22px;font-weight:900;margin-top:12px;text-align:center}
+table{border-collapse:separate;border-spacing:0;width:100%;margin-top:24px}
+th{font-size:20px;font-weight:900;padding:8px 10px;text-align:center;color:var(--mid)}
+th.me{background:var(--navy);color:#fff;border-radius:12px 12px 0 0}
+td{font-size:20px;font-weight:700;padding:8px 10px;text-align:center;border-bottom:1px solid #E2CFC3}
+td:first-child{text-align:left;color:var(--mid);font-weight:800}
+td.me{background:#fff;color:var(--navy);font-weight:900;border-left:3px solid var(--navy);border-right:3px solid var(--navy)}
+td.me.last{border-bottom:3px solid var(--navy);border-radius:0 0 12px 12px}
+td.no{color:#A9A39C}
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;margin-top:22px}
+.nums b{font-family:'Barlow Condensed';font-weight:800;font-size:88px;line-height:.9;color:var(--navy);display:block}
+.nums small{font-size:40px} .nums span{font-size:18px;font-weight:800;color:var(--mid)}
+.uses{flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.use{border:3px solid var(--or);border-radius:14px;padding:16px 22px;background:#fff}
+.use .k{font-size:32px;font-weight:900} .use .d{font-size:20px;color:var(--mid);margin-top:2px}
+.head{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:4px solid var(--navy);padding-bottom:22px}
+h1{font-family:'Barlow Condensed';font-weight:800;font-size:280px;line-height:.82;letter-spacing:-4px;color:var(--navy)}
+h1 span{color:var(--or)}
+.hsub{display:flex;flex-direction:column;align-items:flex-end;gap:12px;padding-bottom:6px}
+.sub{font-size:54px;font-weight:900;letter-spacing:-1.5px;color:var(--navy)}
+.team{font-size:28px;font-weight:700;color:var(--mid)} .team b{color:var(--ink)}
+.foot{position:absolute;left:90px;right:90px;bottom:30px;text-align:center;border-top:2px solid var(--line);padding-top:12px}
+.foot .h{font-size:21px;font-weight:900;color:var(--navy)}
+.foot .c{font-size:15.5px;color:var(--mid);line-height:1.5;margin-top:4px}
+</style></head><body><div class="page">
+<div class="head"><h1>Wave<span>Sense</span></h1><div class="hsub"><div class="sub">Wi-Fi CSI 기반 실내 인체 감지 시스템</div><div class="team"><b>팀장</b> 김보성 &nbsp;|&nbsp; <b>팀원</b> 이민서 · 가얼라</div></div></div>
+<div class="row" style="height:258px">
+ <div style="flex:0 0 40%"><div class="bx" style="clip-path:polygon(0 0,calc(100% - 56px) 0,100% 56px,100% 100%,0 100%);"><div class="in" style="clip-path:polygon(0 0,calc(100% - 56px) 0,100% 56px,100% 100%,0 100%);background:var(--pink)"><div class="sh"><span class="num">01</span><div><div class="tt">작품 소개</div></div></div><div class=.tx" style="margin-top:16px;font-size:27px"><b>ESP32 4대</b>로 Wi-Fi 신호를 읽어 <b class="or">사람의 존재와 위치 구역</b>을 찾는다.</div></div></div></div>
+ <div style="flex:1"><div class="bx" style="clip-path:polygon(56px 0,100% 0,100% 100%,0 100%,0 56px);"><div class="in" style="clip-path:polygon(56px 0,100% 0,100% 100%,0 100%,0 56px);background:var(--cream)"><div style="display:flex;gap:30px;align-items:center;height:100%"><div style="flex:1;padding-left:18px"><div class="sh"><span class="num">02</span><div><div class="tt">선정 배경</div></div></div><div class="tx" style="margin-top:16px"><b>카메라가 못 보는 곳에도 <span class="or">사람은 있다.</span></b> 가구·벽에 가려진 곳, 카메라를 둘 수 없는 곳은 CCTV로 확인하기 어렵다.</div></div><img src="assets/hero_v4.jpg" style="height:182px;border-radius:12px" alt=""></div></div></div></div>
+</div>
+<div class="row" style="height:1040px;gap:0">
+ <div style="flex:0 0 22%"><div class="bx" style="clip-path:polygon(0 0,calc(100% - 56px) 0,100% 56px,100% 100%,0 100%);"><div class="in" style="clip-path:polygon(0 0,calc(100% - 56px) 0,100% 56px,100% 100%,0 100%);background:var(--cream)"><div class="sh stack"><span class="num">03</span><div class="tt">감지 원리</div></div><div class="lead">사람이 있으면<br>신호가 흔들린다.</div><div class="step"><div class="sth"><span class="sn">1</span>송신기가 패킷을 보낸다</div><svg viewBox="0 0 370 120" width="352" height="114"><g fill="none" stroke="#1B2E52" stroke-width="3"><path d="M45 62 L185 18 L325 62" stroke-dasharray="7 6"/><path d="M80 62 L290 62"/><path d="M45 62 L185 106 L325 62" stroke-dasharray="7 6"/></g><rect x="10" y="47" width="70" height="30" rx="6" fill="#1B2E52"/><text x="45" y="68" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">송신</text><rect x="290" y="47" width="70" height="30" rx="6" fill="#fff" stroke="#1B2E52" stroke-width="3"/><text x="325" y="68" text-anchor="middle" font-size="16" font-weight="800" fill="#1B2E52">수신</text><text x="185" y="13" text-anchor="middle" font-size="14" fill="#5B6070">벽·가구 반사</text></svg></div><div class="down"><svg width="26" height="30" viewBox="0 0 26 30"><path d="M13 0v20" stroke="#D9631E" stroke-width="4"/><path d="M3 16l10 12 10-12z" fill="#D9631E"/></svg></div><div class="step"><div class="sth"><span class="sn">2</span>사람이 경로를 바꾼다</div><svg viewBox="0 0 370 120" width="352" height="114"><g fill="none" stroke-width="3"><path d="M80 70 L168 70" stroke="#1B2E52"/><path d="M204 70 q8 -14 16 0 t16 0 t16 0 t16 0 t16 0 t4 0" stroke="#D9631E"/></g><g fill="#D9631E"><circle cx="186" cy="34" r="13"/><path d="M170 92 q0 -42 16 -42 q16 0 16 42 v10 h-32z"/></g><rect x="10" y="55" width="70" height="30" rx="6" fill="#1B2E52"/><text x="45" y="76" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">송신</text><rect x="290" y="55" width="70" height="30" rx="6" fill="#fff" stroke="#1B2E52" stroke-width="3"/><text x="325" y="76" text-anchor="middle" font-size="16" font-weight="800" fill="#1B2E52">수신</text></svg></div><div class="down"><svg width="26" height="30" viewBox="0 0 26 30"><path d="M13 0v20" stroke="#D9631E" stroke-width="4"/><path d="M3 16l10 12 10-12z" fill="#D9631E"/></svg></div><div class="step"><div class="sth"><span class="sn">3</span>수신기가 CSI 변화를 잰다</div><svg viewBox="0 0 370 120" width="352" height="114"><g font-size="17" font-weight="900"><text x="6" y="34" fill="#9AA0AE">없음</text><path d="M6 90 q10 -2 20 0 t20 0 t20 0 t20 0 t20 0" stroke="#9AA0AE" stroke-width="4" fill="none"/>
+<text x="132" y="34" fill="#1B2E52">있음</text><path d="M132 90 q10 -16 20 0 t20 8 t20 -12 t20 4 t20 -8" stroke="#1B2E52" stroke-width="4" fill="none"/>
+<text x="258" y="34" fill="#D9631E">움직임</text><path d="M258 90 l6 -22 l6 32 l6 -30 l6 24 l6 -18 l6 28 l6 -32 l6 20 l6 -12 l6 18 l6 -22 l6 20 l6 -10 l6 6 l6 -2 l6 0 l6 0" stroke="#D9631E" stroke-width="4" fill="none"/></g></svg></div><div class="tx sm" style="margin-top:16px">CSI(채널 상태 정보)의 흔들림 패턴을 AI가 학습해 <b>존재와 구역</b>을 판정한다.</div><div class="cap">그림은 개념도</div></div></div></div>
+ <div style="flex:0 0 96px;display:flex;flex-direction:column;justify-content:space-around;align-items:center;padding:120px 0"><svg width="70" height="30" viewBox="0 0 70 30"><path d="M2 15h58" stroke="#D9631E" stroke-width="3.5"/><path d="M50 5l14 10-14 10" fill="none" stroke="#D9631E" stroke-width="3.5" stroke-linejoin="round"/></svg><svg width="70" height="30" viewBox="0 0 70 30"><path d="M2 15h58" stroke="#D9631E" stroke-width="3.5"/><path d="M50 5l14 10-14 10" fill="none" stroke="#D9631E" stroke-width="3.5" stroke-linejoin="round"/></svg><svg width="70" height="30" viewBox="0 0 70 30"><path d="M2 15h58" stroke="#D9631E" stroke-width="3.5"/><path d="M50 5l14 10-14 10" fill="none" stroke="#D9631E" stroke-width="3.5" stroke-linejoin="round"/></svg><svg width="70" height="30" viewBox="0 0 70 30"><path d="M2 15h58" stroke="#D9631E" stroke-width="3.5"/><path d="M50 5l14 10-14 10" fill="none" stroke="#D9631E" stroke-width="3.5" stroke-linejoin="round"/></svg><svg width="70" height="30" viewBox="0 0 70 30"><path d="M2 15h58" stroke="#D9631E" stroke-width="3.5"/><path d="M50 5l14 10-14 10" fill="none" stroke="#D9631E" stroke-width="3.5" stroke-linejoin="round"/></svg></div>
+ <div style="flex:1"><div class="bx" style="clip-path:polygon(56px 0,100% 0,100% 100%,0 100%,0 56px);"><div class="in" style="clip-path:polygon(56px 0,100% 0,100% 100%,0 100%,0 56px);background:var(--cream)"><div style="padding-left:20px"><div class="sh"><span class="num">04</span><div><div class="tt">시스템 구성도</div><div class=st>송신 1대 · 수신 3대 · 공간 배치 그림</div></div></div><div style="margin-top:30px"><svg viewBox="0 0 1240 560" width="1340" height="605">
+      <defs>
+        <pattern id="hz" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="14" stroke="#D9631E" stroke-width="3" opacity=".4"/></pattern>
+        <marker id="an" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1B2E52"/></marker>
+      </defs>
+      <!-- floor plan -->
+      <g transform="translate(0,10)">
+        <rect x="30" y="30" width="480" height="480" fill="#fff"/>
+        <polygon points="30,165 510,45 510,290 440,276 288,276 288,445 350,510 30,510" fill="#9AA0AE" opacity=".2"/>
+        <polygon points="440,276 510,290 510,510 350,510 288,445 288,276" fill="url(#hz)"/>
+        <g stroke="#BDB4A2" stroke-width="2" stroke-dasharray="7 7"><line x1="270" y1="30" x2="270" y2="510"/><line x1="30" y1="270" x2="510" y2="270"/></g>
+        <g stroke="#1B2E52" stroke-width="2.5" stroke-dasharray="3 9" stroke-linecap="round"><line x1="30" y1="30" x2="510" y2="30"/><line x1="30" y1="30" x2="30" y2="510"/><line x1="30" y1="30" x2="510" y2="510"/></g>
+        <rect x="30" y="30" width="480" height="480" fill="none" stroke="#16203A" stroke-width="6"/>
+        <g fill="#16203A"><rect x="290" y="268" width="160" height="12"/><rect x="282" y="268" width="12" height="170"/></g>
+        <circle cx="420" cy="400" r="34" fill="#D9631E" opacity=".15"/><circle cx="420" cy="400" r="17" fill="#D9631E"/>
+        <g font-size="40" font-weight="900" fill="#BDB4A2" text-anchor="middle"><text x="150" y="160">1</text><text x="390" y="160">2</text><text x="150" y="410">3</text></g>
+        <text x="470" y="462" text-anchor="end" font-size="24" font-weight="900" fill="#D9631E">구역 4 · 사각지대</text>
+        <rect x="14" y="150" width="28" height="40" rx="4" fill="#5B6070"/><text x="56" y="178" font-size="20" font-weight="800" fill="#5B6070">웹캠</text>
+        <g font-size="17" font-weight="900" text-anchor="middle">
+          <rect x="6" y="6" width="50" height="50" rx="8" fill="#1B2E52"/><text x="31" y="38" fill="#fff">TX</text>
+          <rect x="484" y="6" width="50" height="50" rx="8" fill="#fff" stroke="#1B2E52" stroke-width="4"/><text x="509" y="38" fill="#1B2E52">RX1</text>
+          <rect x="6" y="484" width="50" height="50" rx="8" fill="#fff" stroke="#1B2E52" stroke-width="4"/><text x="31" y="516" fill="#1B2E52">RX2</text>
+          <rect x="484" y="484" width="50" height="50" rx="8" fill="#fff" stroke="#1B2E52" stroke-width="4"/><text x="509" y="516" fill="#1B2E52">RX3</text>
+        </g>
+      </g>
+      <!-- right: device chain -->
+      <g transform="translate(610,0)">
+        <g font-size="22" font-weight="900">
+          <rect x="0" y="40" width="250" height="96" rx="16" fill="#1B2E52"/><text x="125" y="82" text-anchor="middle" fill="#fff">송신 ESP32 ×1</text><text x="125" y="112" text-anchor="middle" fill="#fff" font-size="17" font-weight="600" opacity=".8">패킷 계속 송신</text>
+          <rect x="0" y="190" width="250" height="96" rx="16" fill="#fff" stroke="#1B2E52" stroke-width="3"/><text x="125" y="232" text-anchor="middle" fill="#1B2E52">수신 ESP32 ×3</text><text x="125" y="262" text-anchor="middle" fill="#5B6070" font-size="17" font-weight="600">모서리 · 높이 약 1m</text>
+          <rect x="330" y="190" width="290" height="96" rx="16" fill="#fff" stroke="#16203A" stroke-width="3"/><text x="475" y="232" text-anchor="middle">노트북</text><text x="475" y="262" text-anchor="middle" fill="#5B6070" font-size="17" font-weight="600">수집 · 분석 · 판정</text>
+          <rect x="330" y="360" width="290" height="96" rx="16" fill="#D9631E"/><text x="475" y="402" text-anchor="middle" fill="#fff">폰 · 대시보드</text><text x="475" y="432" text-anchor="middle" fill="#fff" font-size="17" font-weight="600">평면도 · 알림</text>
+          <rect x="0" y="360" width="250" height="96" rx="16" fill="#fff" stroke="#9AA0AE" stroke-width="3" stroke-dasharray="8 6"/><text x="125" y="402" text-anchor="middle" fill="#5B6070">웹캠 ×1</text><text x="125" y="432" text-anchor="middle" fill="#5B6070" font-size="17" font-weight="600">CCTV 역할 · 비교용</text>
+        </g>
+        <g stroke="#1B2E52" stroke-width="4" fill="none">
+          <path d="M125 136 V186" marker-end="url(#an)"/>
+          <path d="M250 238 H326" marker-end="url(#an)"/>
+          <path d="M475 286 V356" marker-end="url(#an)"/>
+          <path d="M250 408 C290 408 290 260 326 252" stroke="#9AA0AE" stroke-dasharray="8 6" marker-end="url(#an)"/>
+        </g>
+        <g font-size="17" font-weight="700" fill="#5B6070"><text x="142" y="170">Wi-Fi 패킷</text><text x="262" y="226">USB</text><text x="490" y="328">결과 전송</text></g>
+        
+        
+      </g>
+    </svg></div><div class="legend"><span><i style="border-top:3px dashed #1B2E52;width:40px"></i>Wi-Fi 경로</span><span><i style="background:#9AA0AE;opacity:.45;height:18px;width:30px"></i>웹캠 시야</span><span><i style="background:repeating-linear-gradient(45deg,#D9631E 0 3px,transparent 3px 9px);opacity:.7;height:18px;width:30px"></i>사각지대</span><span><i style="background:#D9631E;width:18px;height:18px;border-radius:50%"></i>감지된 사람</span></div><div class="chips"><div class="chip"><b>공간</b>3m×3m 이상 · 2×2 구역</div><div class="chip"><b>설치</b>모서리 · 높이 약 1m</div><div class="chip"><b>주의</b>송·수신 일직선 금지</div><div class="chip"><b>사각지대</b>구역 4는 웹캠이 못 봄</div></div></div></div></div></div>
+</div>
+<div class="row" style="height:236px"><div class="bx" style="clip-path:polygon(0 0,calc(100% - 90px) 0,100% 90px,100% 100%,0 100%);background:var(--navy)"><div class="in band" style="clip-path:polygon(0 0,calc(100% - 90px) 0,100% 90px,100% 100%,0 100%);background:var(--navy)"><div style="padding:4px 10px"><div style="display:flex;align-items:center;gap:56px"><div class="sh lt"><span class="num">05</span><div><div class="tt">동작 시나리오</div><div class=st>구역 4에 사람이 들어오면</div></div></div><div class="flow"><div class="fc"><div class="circ"><svg width=46 height=46 viewBox="0 0 24 24"><path d="M3 9a13 13 0 0 1 18 0M6.5 12.5a8 8 0 0 1 11 0M10 16a3 3 0 0 1 4 0" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="19" r="1.6" fill="#fff"/></svg><span>수집</span></div><div class="fd">수신 3대 CSI 동시 저장</div></div><svg width="120" height="20" viewBox="0 0 120 20" class="farr"><path d="M0 10h108" stroke="#fff" stroke-width="3"/><path d="M100 2l14 8-14 8" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg><div class="fc"><div class="circ"><svg width=46 height=46 viewBox="0 0 24 24"><path d="M2 12h3l2-5 3 10 3-8 2 5 2-2h5" fill="none" stroke="#fff" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/></svg><span>분석</span></div><div class="fd">진폭 · 빈 채널 제거 · 4초 분할</div></div><svg width="120" height="20" viewBox="0 0 120 20" class="farr"><path d="M0 10h108" stroke="#fff" stroke-width="3"/><path d="M100 2l14 8-14 8" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg><div class="fc"><div class="circ"><svg width=46 height=46 viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" fill="none" stroke="#fff" stroke-width="2"/><rect x="13" y="3" width="8" height="8" fill="none" stroke="#fff" stroke-width="2"/><rect x="3" y="13" width="8" height="8" fill="none" stroke="#fff" stroke-width="2"/><rect x="13" y="13" width="8" height="8" fill="#D9631E"/></svg><span>판정</span></div><div class="fd">존재 여부 · 구역 1~4</div></div><svg width="120" height="20" viewBox="0 0 120 20" class="farr"><path d="M0 10h108" stroke="#fff" stroke-width="3"/><path d="M100 2l14 8-14 8" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg><div class="fc"><div class="circ"><svg width=46 height=46 viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="2.4" fill="#D9631E"/></svg><span>표시</span></div><div class="fd">평면도 · 사각지대 폰 알림</div></div></div></div></div></div></div></div>
+<div class="row" style="height:742px">
+ <div style="flex:0 0 60%"><div class="bx" style="clip-path:polygon(0 0,calc(100% - 56px) 0,100% 56px,100% 100%,0 100%);"><div class="in" style="clip-path:polygon(0 0,calc(100% - 56px) 0,100% 56px,100% 100%,0 100%);background:var(--cream)"><div style="display:flex;justify-content:space-between;align-items:flex-start"><div class="sh"><span class="num">06</span><div><div class="tt">화면 설계</div><div class=st>평면도 · 대시보드 2~3개</div></div></div><span class="sample">화면은 예시 · 실측값 아님</span></div>
+<div style="display:flex;gap:30px;align-items:flex-start;margin-top:22px">
+<div><div><div class="dash"><div class="dh"><span>대시보드 · 평면도</span><span style="opacity:.8">센서 4/4</span></div><div style="display:flex;gap:18px;padding:16px;align-items:center"><svg viewBox="0 0 400 400" width="300" height="300">
+            <defs><pattern id="hz2" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="12" stroke="#D9631E" stroke-width="2.6" opacity=".45"/></pattern></defs>
+            <rect x="20" y="20" width="360" height="360" fill="#FBF8F2"/>
+            <rect x="20" y="20" width="180" height="180" fill="#1B2E52" opacity=".06"/><rect x="200" y="20" width="180" height="180" fill="#1B2E52" opacity=".06"/><rect x="20" y="200" width="180" height="180" fill="#1B2E52" opacity=".06"/>
+            <rect x="200" y="200" width="180" height="180" fill="url(#hz2)"/>
+            <g stroke="#BDB4A2" stroke-width="2" stroke-dasharray="6 6"><line x1="200" y1="20" x2="200" y2="380"/><line x1="20" y1="200" x2="380" y2="200"/></g>
+            <rect x="20" y="20" width="360" height="360" fill="none" stroke="#16203A" stroke-width="5"/>
+            <g fill="#16203A"><rect x="208" y="196" width="122" height="9"/><rect x="202" y="196" width="9" height="130"/></g>
+            <circle cx="305" cy="300" r="30" fill="#D9631E" opacity=".18"/><circle cx="305" cy="300" r="14" fill="#D9631E"/>
+            <g font-size="22" font-weight="900" fill="#9AA0AE"><text x="36" y="52">구역 1</text><text x="290" y="52">구역 2</text><text x="36" y="364">구역 3</text></g>
+            <text x="366" y="364" text-anchor="end" font-size="22" font-weight="900" fill="#D9631E">구역 4</text>
+          </svg><div style="flex:1;font-size:19px">
+<div style="background:#D9631E;color:#fff;border-radius:12px;padding:10px 12px"><div style="font-size:14px;font-weight:800;opacity:.9">사각지대 감지</div><div style="font-size:22px;font-weight:900">구역 4 · 있음</div></div>
+<div class="kv"><span>Wi-Fi 판정</span><b>있음</b></div><div class="kv"><span>웹캠</span><b style="color:#5B6070">가려짐</b></div><div class="kv" style="border:0"><span>판정 단위</span><b>4초</b></div></div></div></div></div><div class="plab">노트북 대시보드</div></div>
+<div><div class="frame"><img src="v7_screens/screen_01_live.png"><div class="island"></div></div><div class="plab">폰 · 실시간</div></div>
+<div><div class="frame" style="box-shadow:0 0 0 4px var(--cream),0 0 0 8px #D9631E"><img src="v7_screens/screen_04_pose.png"><div class="island"></div></div><div class="plab" style="color:#D9631E">자세 추정 <span class="ex">확장 목표</span></div></div>
+</div></div></div></div>
+ <div style="flex:1"><div class="bx" style="clip-path:polygon(56px 0,100% 0,100% 100%,0 100%,0 56px);"><div class="in" style="clip-path:polygon(56px 0,100% 0,100% 100%,0 100%,0 56px);background:var(--pink)"><div style="padding-left:20px"><div class="sh"><span class="num">07</span><div><div class="tt">차별성</div><div class=st>CCTV · 기존 감지 방식과 비교</div></div></div><table>
+<tr><th></th><th>CCTV</th><th>기존 감지 방식</th><th class="me">WaveSense</th></tr>
+<tr><td>알려주는 것</td><td>영상</td><td>움직임 발생</td><td class="me">존재 · 구역</td></tr>
+<tr><td>가려진 구역</td><td class="no">사각지대 발생</td><td class="no">—</td><td class="me">Wi-Fi로 보완</td></tr>
+<tr><td>감지에 영상</td><td>필요</td><td class="no">—</td><td class="me">불필요</td></tr>
+<tr><td style="border:0">화면</td><td style="border:0">영상</td><td style="border:0">알림</td><td class="me last">평면도 · 신뢰도</td></tr>
+</table>
+<div class="nums"><div><b>100<small>%</small></b><span>존재 감지 (가림 없음)</span></div><div><b>97.5<small>%</small></b><span>벽 너머 존재 감지</span></div><div><b>91<small>%</small></b><span>위치 5곳 구분</span></div><div><b style="color:#D9631E">85<small>%</small></b><span>벽 너머 방 5개 구분</span></div></div>
+<div class="cap" style="margin-top:8px">사전 검증 · 공개 ESP32 데이터 기준 · 다른 환경에 그대로 쓰면 56.82~69.57% → 실험 공간에서 직접 학습<br>CCTV를 대체하지 않고 함께 써서 미감지를 줄인다.</div></div></div></div></div>
+</div>
+<div class="row" style="height:184px"><div class="bx" style="clip-path:polygon(0 0,calc(100% - 40px) 0,100% 40px,100% 100%,0 100%);"><div class="in" style="clip-path:polygon(0 0,calc(100% - 40px) 0,100% 40px,100% 100%,0 100%);background:var(--cream)"><div style="display:flex;align-items:center;gap:40px"><div class="sh"><span class="num">08</span><div><div class="tt">활용 분야 및 기대 효과</div><div class=st>감지 단계에서 영상 불필요 · 어둡거나 가려진 곳도 확인</div></div></div><div class="uses"><div class="use"><div class="k">보안</div><div class="d">CCTV 사각지대 보완</div></div><div class="use"><div class="k">돌봄</div><div class="d">독거 가구·유아 재실 확인</div></div><div class="use"><div class="k">스마트홈</div><div class="d">빈 방 조명·냉난방 자동 제어</div></div></div></div></div></div></div>
+<div class="foot"><div class="h">개발 환경 · 참고 자료</div>
+<div class="c">ESP32 4대(송신 1 · 수신 3) · 노트북 · 웹캠 · Espressif ESP-IDF / esp-csi 예제(csi_send · csi_recv) · 사전 검증: 공개 ESP32 CSI 데이터셋 2종 (RandomForest, 로지스틱 회귀)<br>
+[1] J. Strohmayer, M. Kampel, “WiFi CSI-Based Long-Range Through-Wall Human Activity Recognition with the ESP32,” ICVS 2023, pp. 41–50, doi:10.5281/zenodo.8021099 &nbsp; [2] J. Strohmayer, M. Kampel, “Wallhack1.8k Dataset,” Zenodo, 2024, doi:10.5281/zenodo.13950918<br>[3] Espressif Systems, ESP-IDF / esp-csi</div></div>
+</div></body></html>

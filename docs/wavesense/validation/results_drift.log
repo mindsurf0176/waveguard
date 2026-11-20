@@ -1,0 +1,113 @@
+windows 1778 {0: {'LOS-BQ': 118, 'LOS-PIFA': 118, 'NLOS-BQ': 118, 'NLOS-PIFA': 114}, 1: {'LOS-BQ': 303, 'LOS-PIFA': 306, 'NLOS-BQ': 295, 'NLOS-PIFA': 287}}
+abs / no-calib         group-by-recording (within setting)    RF bal=0.966 FA=0.021 FAearly=0.017 FAlate=0.026
+abs / no-calib         group-by-recording (within setting)    LR bal=0.985 FA=0.006 FAearly=0.000 FAlate=0.013
+abs / no-calib         leave-one-setting-out                  RF bal=0.551 FA=0.898 FAearly=0.962 FAlate=0.835
+abs / no-calib         leave-one-setting-out                  LR bal=0.779 FA=0.403 FAearly=0.386 FAlate=0.420
+abs / no-calib         cross-pair                             RF bal=0.551 FA=0.897 FAearly=0.877 FAlate=0.917
+abs / no-calib         cross-pair                             LR bal=0.578 FA=0.739 FAearly=0.741 FAlate=0.737
+abs / fixed-calib      group-by-recording (within setting)    RF bal=0.966 FA=0.021 FAearly=0.017 FAlate=0.026
+abs / fixed-calib      group-by-recording (within setting)    LR bal=0.985 FA=0.006 FAearly=0.000 FAlate=0.013
+abs / fixed-calib      leave-one-setting-out                  RF bal=0.822 FA=0.009 FAearly=0.017 FAlate=0.000
+abs / fixed-calib      leave-one-setting-out                  LR bal=0.821 FA=0.011 FAearly=0.022 FAlate=0.000
+abs / fixed-calib      cross-pair                             RF bal=0.662 FA=0.008 FAearly=0.011 FAlate=0.004
+abs / fixed-calib      cross-pair                             LR bal=0.802 FA=0.072 FAearly=0.084 FAlate=0.061
+  [abs / EMA (fix1)] person windows absorbed into baseline: 0.851; empty windows used for update: 0.994
+abs / EMA (fix1)       group-by-recording (within setting)    RF bal=0.887 FA=0.173 FAearly=0.320 FAlate=0.026
+abs / EMA (fix1)       group-by-recording (within setting)    LR bal=0.903 FA=0.139 FAearly=0.273 FAlate=0.004
+abs / EMA (fix1)       leave-one-setting-out                  RF bal=0.837 FA=0.230 FAearly=0.371 FAlate=0.089
+abs / EMA (fix1)       leave-one-setting-out                  LR bal=0.828 FA=0.215 FAearly=0.324 FAlate=0.106
+abs / EMA (fix1)       cross-pair                             RF bal=0.691 FA=0.395 FAearly=0.450 FAlate=0.341
+abs / EMA (fix1)       cross-pair                             LR bal=0.742 FA=0.358 FAearly=0.454 FAlate=0.262
+chg (fix2) / no-calib  group-by-recording (within setting)    RF bal=0.962 FA=0.043 FAearly=0.043 FAlate=0.042
+chg (fix2) / no-calib  group-by-recording (within setting)    LR bal=0.970 FA=0.015 FAearly=0.013 FAlate=0.017
+chg (fix2) / no-calib  leave-one-setting-out                  RF bal=0.693 FA=0.589 FAearly=0.566 FAlate=0.612
+chg (fix2) / no-calib  leave-one-setting-out                  LR bal=0.791 FA=0.280 FAearly=0.254 FAlate=0.305
+chg (fix2) / no-calib  cross-pair                             RF bal=0.684 FA=0.573 FAearly=0.581 FAlate=0.564
+chg (fix2) / no-calib  cross-pair                             LR bal=0.685 FA=0.462 FAearly=0.467 FAlate=0.457
+chg / fixed-calib      group-by-recording (within setting)    RF bal=0.962 FA=0.043 FAearly=0.043 FAlate=0.042
+chg / fixed-calib      group-by-recording (within setting)    LR bal=0.970 FA=0.015 FAearly=0.013 FAlate=0.017
+chg / fixed-calib      leave-one-setting-out                  RF bal=0.864 FA=0.060 FAearly=0.056 FAlate=0.064
+chg / fixed-calib      leave-one-setting-out                  LR bal=0.905 FA=0.035 FAearly=0.060 FAlate=0.009
+chg / fixed-calib      cross-pair                             RF bal=0.755 FA=0.089 FAearly=0.097 FAlate=0.082
+chg / fixed-calib      cross-pair                             LR bal=0.813 FA=0.109 FAearly=0.144 FAlate=0.074
+  [chg + EMA (fix1+2)] person windows absorbed into baseline: 0.851; empty windows used for update: 0.994
+chg + EMA (fix1+2)     group-by-recording (within setting)    RF bal=0.878 FA=0.179 FAearly=0.320 FAlate=0.038
+chg + EMA (fix1+2)     group-by-recording (within setting)    LR bal=0.889 FA=0.149 FAearly=0.290 FAlate=0.009
+chg + EMA (fix1+2)     leave-one-setting-out                  RF bal=0.874 FA=0.184 FAearly=0.325 FAlate=0.043
+chg + EMA (fix1+2)     leave-one-setting-out                  LR bal=0.877 FA=0.141 FAearly=0.256 FAlate=0.025
+chg + EMA (fix1+2)     cross-pair                             RF bal=0.840 FA=0.178 FAearly=0.305 FAlate=0.051
+chg + EMA (fix1+2)     cross-pair                             LR bal=0.819 FA=0.225 FAearly=0.373 FAlate=0.076
+  [abs / EMA-safe] person windows absorbed into baseline: 0.228; empty windows used for update: 0.870
+abs / EMA-safe         group-by-recording (within setting)    RF bal=0.910 FA=0.088 FAearly=0.159 FAlate=0.017
+abs / EMA-safe         group-by-recording (within setting)    LR bal=0.939 FA=0.056 FAearly=0.104 FAlate=0.008
+abs / EMA-safe         leave-one-setting-out                  RF bal=0.794 FA=0.146 FAearly=0.157 FAlate=0.136
+abs / EMA-safe         leave-one-setting-out                  LR bal=0.771 FA=0.142 FAearly=0.136 FAlate=0.148
+abs / EMA-safe         cross-pair                             RF bal=0.718 FA=0.172 FAearly=0.162 FAlate=0.181
+abs / EMA-safe         cross-pair                             LR bal=0.705 FA=0.201 FAearly=0.217 FAlate=0.185
+  [chg + EMA-safe] person windows absorbed into baseline: 0.228; empty windows used for update: 0.870
+chg + EMA-safe         group-by-recording (within setting)    RF bal=0.920 FA=0.080 FAearly=0.142 FAlate=0.017
+chg + EMA-safe         group-by-recording (within setting)    LR bal=0.941 FA=0.052 FAearly=0.099 FAlate=0.004
+chg + EMA-safe         leave-one-setting-out                  RF bal=0.794 FA=0.166 FAearly=0.200 FAlate=0.131
+chg + EMA-safe         leave-one-setting-out                  LR bal=0.792 FA=0.112 FAearly=0.123 FAlate=0.102
+chg + EMA-safe         cross-pair                             RF bal=0.791 FA=0.178 FAearly=0.198 FAlate=0.157
+chg + EMA-safe         cross-pair                             LR bal=0.788 FA=0.156 FAearly=0.191 FAlate=0.121
+threshold / fixed-calib {'bal_acc': 0.821, 'false_alarm': 0.011, 'miss': 0.348, 'fa_early': 0.018, 'fa_late': 0.004}
+threshold / EMA (fix1) {'bal_acc': 0.571, 'false_alarm': 0.007, 'miss': 0.852, 'fa_early': 0.009, 'fa_late': 0.004}
+threshold / EMA-safe {'bal_acc': 0.792, 'false_alarm': 0.011, 'miss': 0.405, 'fa_early': 0.018, 'fa_late': 0.004}
+                                                                             bal_acc  false_alarm   miss  fa_early  fa_late
+scheme                              method                            model                                                
+cross-pair                          abs / EMA (fix1)                  LR       0.742        0.358  0.159     0.454    0.262
+                                                                      RF       0.691        0.395  0.224     0.450    0.341
+                                    abs / EMA-safe                    LR       0.705        0.201  0.389     0.217    0.185
+                                                                      RF       0.718        0.172  0.392     0.162    0.181
+                                    abs / fixed-calib                 LR       0.802        0.072  0.324     0.084    0.061
+                                                                      RF       0.662        0.008  0.669     0.011    0.004
+                                    abs / no-calib                    LR       0.578        0.739  0.105     0.741    0.737
+                                                                      RF       0.551        0.897  0.000     0.877    0.917
+                                    chg (fix2) / no-calib             LR       0.685        0.462  0.169     0.467    0.457
+                                                                      RF       0.684        0.573  0.060     0.581    0.564
+                                    chg + EMA (fix1+2)                LR       0.819        0.225  0.136     0.373    0.076
+                                                                      RF       0.840        0.178  0.143     0.305    0.051
+                                    chg + EMA-safe                    LR       0.788        0.156  0.268     0.191    0.121
+                                                                      RF       0.791        0.178  0.241     0.198    0.157
+                                    chg / fixed-calib                 LR       0.813        0.109  0.264     0.144    0.074
+                                                                      RF       0.755        0.089  0.400     0.097    0.082
+group-by-recording (within setting) abs / EMA (fix1)                  LR       0.903        0.139  0.055     0.273    0.004
+                                                                      RF       0.887        0.173  0.053     0.320    0.026
+                                    abs / EMA-safe                    LR       0.939        0.056  0.066     0.104    0.008
+                                                                      RF       0.910        0.088  0.091     0.159    0.017
+                                    abs / fixed-calib                 LR       0.985        0.006  0.023     0.000    0.013
+                                                                      RF       0.966        0.021  0.046     0.017    0.026
+                                    abs / no-calib                    LR       0.985        0.006  0.023     0.000    0.013
+                                                                      RF       0.966        0.021  0.046     0.017    0.026
+                                    chg (fix2) / no-calib             LR       0.970        0.015  0.045     0.013    0.017
+                                                                      RF       0.962        0.043  0.033     0.043    0.042
+                                    chg + EMA (fix1+2)                LR       0.889        0.149  0.074     0.290    0.009
+                                                                      RF       0.878        0.179  0.065     0.320    0.038
+                                    chg + EMA-safe                    LR       0.941        0.052  0.066     0.099    0.004
+                                                                      RF       0.920        0.080  0.080     0.142    0.017
+                                    chg / fixed-calib                 LR       0.970        0.015  0.045     0.013    0.017
+                                                                      RF       0.962        0.043  0.033     0.043    0.042
+                                    threshold / EMA (fix1)            -        0.571        0.007  0.852     0.009    0.004
+                                    threshold / EMA-safe              -        0.792        0.011  0.405     0.018    0.004
+                                    threshold / fixed-calib           -        0.821        0.011  0.348     0.018    0.004
+leave-one-setting-out               abs / EMA (fix1)                  LR       0.828        0.215  0.129     0.324    0.106
+                                                                      RF       0.837        0.230  0.096     0.371    0.089
+                                    abs / EMA-safe                    LR       0.771        0.142  0.316     0.136    0.148
+                                                                      RF       0.794        0.146  0.265     0.157    0.136
+                                    abs / fixed-calib                 LR       0.821        0.011  0.348     0.022    0.000
+                                                                      RF       0.822        0.009  0.347     0.017    0.000
+                                    abs / no-calib                    LR       0.779        0.403  0.040     0.386    0.420
+                                                                      RF       0.551        0.898  0.000     0.962    0.835
+                                    chg (fix2) / no-calib             LR       0.791        0.280  0.138     0.254    0.305
+                                                                      RF       0.693        0.589  0.024     0.566    0.612
+                                    chg + EMA (fix1+2)                LR       0.877        0.141  0.105     0.256    0.025
+                                                                      RF       0.874        0.184  0.068     0.325    0.043
+                                    chg + EMA-safe                    LR       0.792        0.112  0.303     0.123    0.102
+                                                                      RF       0.794        0.166  0.247     0.200    0.131
+                                    chg / fixed-calib                 LR       0.905        0.035  0.155     0.060    0.009
+                                                                      RF       0.864        0.060  0.211     0.056    0.064
+                                    threshold / EMA (fix1)            -        0.571        0.007  0.852     0.009    0.004
+                                    threshold / EMA-safe              -        0.792        0.011  0.405     0.018    0.004
+                                    threshold / fixed-calib           -        0.821        0.011  0.348     0.018    0.004
+                                    threshold / no-calib (global thr) -        0.498        0.498  0.506     0.500    0.496
